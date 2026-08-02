@@ -908,6 +908,7 @@ p {
 
 .contact-layout > div:first-child > p:last-child {
     max-width: 600px;
+    margin-top: 24px;
 
     color: var(--muted);
 }
