@@ -11,12 +11,12 @@
 
     <meta
         name="description"
-        content="Academic website of Panayiota Papafiggou. Research interests include artificial intelligence, reinforcement learning, multi-agent systems, formal methods and intelligent engineering applications."
+        content="Academic website of Panayiota Papafiggou, an MSc Computer Science student at the University of Warwick with research interests in artificial intelligence, reinforcement learning and multi-agent systems."
     >
 
     <meta
         name="keywords"
-        content="Panayiota Papafiggou, Artificial Intelligence, Machine Learning, Reinforcement Learning, Multi-Agent Systems, Academic Research, Formal Methods"
+        content="Panayiota Papafiggou, artificial intelligence, machine learning, reinforcement learning, multi-agent systems, computer science, academic research"
     >
 
     <meta name="author" content="Panayiota Papafiggou">
@@ -34,7 +34,7 @@
     >
 
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
         rel="stylesheet"
     >
 
@@ -44,249 +44,220 @@
 <body>
 
     <!-- =====================================================
-         MOBILE HEADER
+         HEADER
     ====================================================== -->
 
-    <header class="mobile-header">
+    <header class="site-header">
 
-        <a class="mobile-brand" href="#home">
-            Panayiota Papafiggou
-        </a>
+        <div class="header-inner">
 
-        <button
-            class="mobile-menu-button"
-            id="mobileMenuButton"
-            aria-label="Open navigation menu"
-            aria-expanded="false"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+            <a class="site-identity" href="#home">
 
-    </header>
-
-    <!-- =====================================================
-         SIDEBAR
-    ====================================================== -->
-
-    <aside class="sidebar" id="sidebar">
-
-        <div class="sidebar-inner">
-
-            <a class="profile-mark" href="#home">
-                PP
-            </a>
-
-            <div class="profile-heading">
-
-                <h1>
-                    Panayiota<br>
-                    Papafiggou
-                </h1>
-
-                <p>
-                    MSc Computer Science Student
-                </p>
-
-                <span>
-                    Artificial Intelligence and Machine Learning
+                <span class="identity-mark">
+                    PP
                 </span>
 
-            </div>
+                <span class="identity-text">
 
-            <nav class="sidebar-navigation">
+                    <strong>
+                        Panayiota Papafiggou
+                    </strong>
 
-                <a class="nav-link active" href="#home">
-                    <span>01</span>
-                    Home
-                </a>
+                    <small>
+                        Artificial Intelligence Research
+                    </small>
 
-                <a class="nav-link" href="#about">
-                    <span>02</span>
+                </span>
+
+            </a>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+            <nav
+                class="main-navigation"
+                id="mainNavigation"
+            >
+
+                <a href="#about">
                     About
                 </a>
 
-                <a class="nav-link" href="#cv">
-                    <span>03</span>
-                    CV
-                </a>
-
-                <a class="nav-link" href="#research">
-                    <span>04</span>
+                <a href="#research">
                     Research
                 </a>
 
-                <a class="nav-link" href="#projects">
-                    <span>05</span>
+                <a href="#projects">
                     Projects
                 </a>
 
-                <a class="nav-link" href="#background">
-                    <span>06</span>
-                    Background
+                <a href="#experience">
+                    Experience
                 </a>
 
-                <a class="nav-link" href="#activities">
-                    <span>07</span>
+                <a href="#activities">
                     Activities
                 </a>
 
-                <a class="nav-link" href="#self">
-                    <span>08</span>
-                    Self
+                <a href="#contact">
+                    Contact
                 </a>
 
-                <a class="nav-link" href="#contact">
-                    <span>09</span>
-                    Contact
+                <a
+                    class="nav-cv"
+                    href="cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    CV [PDF]
                 </a>
 
             </nav>
 
-            <div class="sidebar-links">
-
-                <a
-                    href="mailto:yiotapapafiggou@gmail.com"
-                    aria-label="Email"
-                >
-                    Email
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/panayiota-papafiggou-88b97b300"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    LinkedIn
-                </a>
-
-                <a
-                    href="https://github.com/yiota0707"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub
-                </a>
-
-            </div>
-
-            <p class="sidebar-location">
-                United Kingdom
-            </p>
-
         </div>
 
-    </aside>
+    </header>
 
-    <!-- =====================================================
-         MAIN PAGE
-    ====================================================== -->
-
-    <main class="page-content">
+    <main>
 
         <!-- =================================================
-             HOME
+             HERO
         ================================================== -->
 
-        <section id="home" class="section hero-section">
+        <section
+            id="home"
+            class="hero-section"
+        >
 
-            <div class="hero-background">
+            <div class="page-width hero-layout">
 
-                <div class="hero-orb hero-orb-one"></div>
-                <div class="hero-orb hero-orb-two"></div>
+                <div class="hero-content reveal">
 
-                <div class="network-animation" aria-hidden="true">
+                    <p class="eyebrow">
+                        Artificial Intelligence · Reinforcement Learning · Multi-Agent Systems
+                    </p>
 
-                    <span class="node node-one"></span>
-                    <span class="node node-two"></span>
-                    <span class="node node-three"></span>
-                    <span class="node node-four"></span>
-                    <span class="node node-five"></span>
+                    <h1>
+                        Panayiota Papafiggou
+                    </h1>
 
-                    <span class="network-line line-one"></span>
-                    <span class="network-line line-two"></span>
-                    <span class="network-line line-three"></span>
-                    <span class="network-line line-four"></span>
+                    <p class="hero-role">
+                        MSc Computer Science Student
+                        <span>at the University of Warwick</span>
+                    </p>
+
+                    <p class="hero-summary">
+                        I am a computer scientist interested in artificial
+                        intelligence, reinforcement learning and multi-agent
+                        systems. My current research examines how cooperation
+                        emerges between learning agents, with broader interests
+                        in intelligent decision-making, formal methods and
+                        machine learning for engineering applications.
+                    </p>
+
+                    <div class="hero-links">
+
+                        <a
+                            class="button button-primary"
+                            href="#research"
+                        >
+                            View research
+                        </a>
+
+                        <a
+                            class="button button-secondary"
+                            href="cv.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Download CV
+                        </a>
+
+                    </div>
+
+                    <div class="text-links">
+
+                        <a href="mailto:yiotapapafiggou@gmail.com">
+                            Email
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/panayiota-papafiggou-88b97b300"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <a
+                            href="https://github.com/yiota0707"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
 
                 </div>
 
-            </div>
+                <aside class="hero-panel reveal">
 
-            <div class="section-container hero-content">
+                    <p class="panel-heading">
+                        Research interests
+                    </p>
 
-                <p class="section-eyebrow reveal">
-                    Artificial Intelligence · Multi-Agent Systems · Reinforcement Learning
-                </p>
+                    <ul class="research-interest-list">
 
-                <h2 class="hero-title reveal">
-                    Designing and understanding
-                    <em>intelligent systems</em>
-                    that learn, interact and adapt.
-                </h2>
+                        <li>
+                            Multi-Agent Reinforcement Learning
+                        </li>
 
-                <p class="hero-introduction reveal">
-                    I am an MSc Computer Science student at the University of
-                    Warwick. My research interests lie in artificial intelligence,
-                    particularly reinforcement learning, multi-agent systems,
-                    intelligent decision-making and AI for real-world applications.
-                </p>
-
-                <div class="hero-buttons reveal">
-
-                    <a class="primary-button" href="#research">
-                        Explore my research
-                    </a>
-
-                    <a
-                        class="secondary-button"
-                        href="cv.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View CV
-                    </a>
-
-                </div>
-
-                <div class="hero-topics reveal">
-
-                    <article>
-                        <span>01</span>
-                        <p>
+                        <li>
                             Cooperative Artificial Intelligence
-                        </p>
-                    </article>
+                        </li>
 
-                    <article>
-                        <span>02</span>
-                        <p>
-                            Agent-Based Modelling and Simulation
-                        </p>
-                    </article>
+                        <li>
+                            Intelligent Decision-Making
+                        </li>
 
-                    <article>
-                        <span>03</span>
-                        <p>
+                        <li>
                             AI for Engineering Systems
-                        </p>
-                    </article>
+                        </li>
 
-                    <article>
-                        <span>04</span>
+                        <li>
+                            Formal Methods and Type Theory
+                        </li>
+
+                    </ul>
+
+                    <div class="panel-information">
+
                         <p>
-                            Formal and Mathematical Methods
+                            <strong>Institution</strong>
+                            University of Warwick
                         </p>
-                    </article>
 
-                </div>
+                        <p>
+                            <strong>Location</strong>
+                            United Kingdom
+                        </p>
+
+                    </div>
+
+                </aside>
 
             </div>
-
-            <a class="scroll-indicator" href="#about">
-                <span>Scroll</span>
-                <i></i>
-            </a>
 
         </section>
 
@@ -294,177 +265,88 @@
              ABOUT
         ================================================== -->
 
-        <section id="about" class="section light-section">
+        <section
+            id="about"
+            class="content-section"
+        >
 
-            <div class="section-container">
+            <div class="page-width">
 
-                <header class="section-header reveal">
+                <header class="section-heading reveal">
 
-                    <span class="section-number">
-                        02
-                    </span>
+                    <p class="section-label">
+                        Profile
+                    </p>
 
-                    <div>
-
-                        <p class="section-label">
-                            About
-                        </p>
-
-                        <h2>
-                            About Me
-                        </h2>
-
-                    </div>
+                    <h2>
+                        About
+                    </h2>
 
                 </header>
 
                 <div class="about-layout">
 
-                    <div class="about-lead reveal">
+                    <div class="about-introduction reveal">
 
                         <p>
-                            I am interested in how autonomous agents learn,
-                            cooperate and make decisions in complex environments.
+                            My academic interests centre on how intelligent
+                            systems learn, cooperate and make decisions in
+                            complex environments.
                         </p>
 
                     </div>
 
-                    <div class="about-text reveal">
+                    <div class="about-details reveal">
 
                         <p>
-                            My academic background spans artificial intelligence,
-                            machine learning, formal methods and software
-                            engineering. I am particularly interested in research
-                            that combines theoretical questions about learning
-                            and interaction with practical applications.
+                            I am currently completing an MSc in Computer
+                            Science at the University of Warwick. My academic
+                            background includes artificial intelligence,
+                            machine learning, formal methods, software
+                            engineering and data analysis.
                         </p>
 
                         <p>
                             My experience includes algorithm development,
-                            computational modelling, simulation, statistical
-                            analysis, formal proof development and interdisciplinary
-                            research.
+                            computational modelling, large-scale simulation,
+                            statistical evaluation and computer-assisted
+                            mathematical proof development.
                         </p>
 
                         <p>
-                            My long-term goal is to contribute to artificial
-                            intelligence through academic research, collaboration
-                            and teaching.
+                            I am particularly interested in research that
+                            connects rigorous computational methods with
+                            real-world scientific and engineering problems.
+                            My long-term aim is to pursue an academic career
+                            involving both research and teaching.
                         </p>
 
                     </div>
 
                 </div>
 
-                <div class="interest-grid">
+                <div class="blue-note reveal">
 
-                    <button
-                        class="interest-card reveal"
-                        data-popup="popup-cooperative-ai"
-                    >
+                    <div>
 
-                        <span>01</span>
-
-                        <h3>
-                            Cooperative AI
-                        </h3>
-
-                        <p>
-                            Cooperation, partner selection and strategic
-                            interaction between learning agents.
+                        <p class="blue-note-label">
+                            Current focus
                         </p>
 
-                        <strong>
-                            Read more
-                        </strong>
-
-                    </button>
-
-                    <button
-                        class="interest-card reveal"
-                        data-popup="popup-decision-making"
-                    >
-
-                        <span>02</span>
-
                         <h3>
-                            Intelligent Decision-Making
+                            Cooperation in Multi-Agent Reinforcement Learning
                         </h3>
 
-                        <p>
-                            Learning and adaptation under uncertainty and
-                            incomplete information.
-                        </p>
+                    </div>
 
-                        <strong>
-                            Read more
-                        </strong>
-
-                    </button>
-
-                    <button
-                        class="interest-card reveal"
-                        data-popup="popup-engineering-ai"
-                    >
-
-                        <span>03</span>
-
-                        <h3>
-                            AI for Engineering
-                        </h3>
-
-                        <p>
-                            Machine learning for data-driven analysis,
-                            diagnostics and monitoring.
-                        </p>
-
-                        <strong>
-                            Read more
-                        </strong>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- =================================================
-             CV
-        ================================================== -->
-
-        <section id="cv" class="section cv-section">
-
-            <div class="section-container cv-layout reveal">
-
-                <div>
-
-                    <p class="section-label light-label">
-                        Curriculum Vitae
+                    <p>
+                        My MSc dissertation investigates how assortative
+                        matching and partner-selection mechanisms influence
+                        cooperation between reinforcement learning agents in
+                        repeated social dilemmas.
                     </p>
 
-                    <h2>
-                        Education, research experience,
-                        technical work and academic activities.
-                    </h2>
-
                 </div>
-
-                <a
-                    class="cv-download-button"
-                    href="cv.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>
-                        Download CV
-                    </span>
-
-                    <strong>
-                        PDF
-                    </strong>
-                </a>
 
             </div>
 
@@ -474,308 +356,259 @@
              RESEARCH
         ================================================== -->
 
-        <section id="research" class="section light-section">
+        <section
+            id="research"
+            class="content-section section-tinted"
+        >
 
-            <div class="section-container">
+            <div class="page-width">
 
-                <header class="section-header reveal">
+                <header class="section-heading reveal">
 
-                    <span class="section-number">
-                        04
-                    </span>
+                    <p class="section-label">
+                        Academic work
+                    </p>
 
-                    <div>
+                    <h2>
+                        Research
+                    </h2>
 
-                        <p class="section-label">
-                            Research
-                        </p>
-
-                        <h2>
-                            Research Interests
-                        </h2>
-
-                    </div>
+                    <p class="section-description">
+                        My work spans multi-agent reinforcement learning,
+                        maritime data analysis and formal mathematical
+                        methods.
+                    </p>
 
                 </header>
 
-                <div class="research-introduction reveal">
+                <!-- RESEARCH ITEM 1 -->
 
-                    <p>
-                        I am interested in situations in which intelligent agents
-                        learn, make decisions and interact within complex
-                        environments.
-                    </p>
+                <article class="research-entry reveal">
 
-                    <p>
-                        I am particularly interested in cases where individually
-                        rational behaviour does not automatically produce a
-                        desirable collective outcome, and in mechanisms that can
-                        encourage cooperation and coordination.
-                    </p>
+                    <div class="research-entry-meta">
 
-                </div>
+                        <p>
+                            MSc Dissertation
+                        </p>
 
-                <!-- =========================================
-                     RESEARCH TOPIC 1
-                ========================================== -->
+                        <span>
+                            University of Warwick
+                        </span>
 
-                <article class="research-topic">
+                        <span>
+                            2025–Present
+                        </span>
 
-                    <div class="research-topic-number reveal">
-                        01
                     </div>
 
-                    <div class="research-topic-content">
+                    <div class="research-entry-content">
 
-                        <p class="research-category reveal">
-                            Cooperative Artificial Intelligence
-                        </p>
-
-                        <h3 class="reveal">
-                            Assortative Matching and Cooperation
-                            in Multi-Agent Reinforcement Learning
+                        <h3>
+                            Assortative Matching and the Emergence of
+                            Cooperation in Multi-Agent Reinforcement Learning
+                            Systems
                         </h3>
 
-                        <p class="research-question reveal">
-                            How can self-interested learning agents develop and
-                            sustain cooperative behaviour?
+                        <p class="research-question">
+                            How can matching and partner-selection mechanisms
+                            encourage cooperation between autonomous learning
+                            agents?
                         </p>
 
-                        <div class="research-columns">
+                        <p>
+                            This research investigates repeated Prisoner’s
+                            Dilemma environments in which reinforcement
+                            learning agents can adapt both their strategic
+                            behaviour and their interaction partners.
+                        </p>
 
-                            <div class="research-copy reveal">
+                        <p>
+                            I developed baseline and hybrid Python models using
+                            Q-learning, partner switching and assortative
+                            rematching. The experimental programme includes
+                            sensitivity analyses, ablation studies, population
+                            studies, convergence analysis and behavioural
+                            evaluation.
+                        </p>
 
-                                <p>
-                                    Multi-agent environments often contain agents
-                                    whose objectives partly align but may also
-                                    conflict. Each agent learns from its own
-                                    experience, but its outcomes depend on the
-                                    behaviour of others.
-                                </p>
+                        <div class="keyword-list">
 
-                                <p>
-                                    My current MSc dissertation investigates how
-                                    assortative matching and partner-selection
-                                    mechanisms influence cooperation among
-                                    reinforcement learning agents in repeated
-                                    social dilemmas.
-                                </p>
+                            <span>
+                                Q-Learning
+                            </span>
 
-                                <p>
-                                    The work compares baseline and hybrid
-                                    multi-agent models using Q-learning, adaptive
-                                    partner switching and assortative rematching.
-                                </p>
+                            <span>
+                                Multi-Agent Systems
+                            </span>
 
-                            </div>
+                            <span>
+                                Cooperation
+                            </span>
 
-                            <div class="research-graphic network-graphic reveal">
+                            <span>
+                                Experimental Design
+                            </span>
 
-                                <div class="graphic-node graphic-node-one"></div>
-                                <div class="graphic-node graphic-node-two"></div>
-                                <div class="graphic-node graphic-node-three"></div>
-                                <div class="graphic-node graphic-node-four"></div>
-                                <div class="graphic-node graphic-node-five"></div>
-
-                                <div class="graphic-edge graphic-edge-one"></div>
-                                <div class="graphic-edge graphic-edge-two"></div>
-                                <div class="graphic-edge graphic-edge-three"></div>
-                                <div class="graphic-edge graphic-edge-four"></div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="research-methods reveal">
-
-                            <span>Q-Learning</span>
-                            <span>Multi-Agent Systems</span>
-                            <span>Partner Selection</span>
-                            <span>Social Dilemmas</span>
-                            <span>Simulation</span>
+                            <span>
+                                Statistical Analysis
+                            </span>
 
                         </div>
 
                         <button
-                            class="text-button reveal"
-                            data-popup="popup-dissertation"
+                            class="details-button"
+                            data-dialog="dissertationDialog"
                         >
-                            View research details
+                            Research details
                         </button>
 
                     </div>
 
                 </article>
 
-                <!-- =========================================
-                     RESEARCH TOPIC 2
-                ========================================== -->
+                <!-- RESEARCH ITEM 2 -->
 
-                <article class="research-topic">
+                <article class="research-entry reveal">
 
-                    <div class="research-topic-number reveal">
-                        02
-                    </div>
+                    <div class="research-entry-meta">
 
-                    <div class="research-topic-content">
-
-                        <p class="research-category reveal">
-                            Maritime Data and Algorithm Development
+                        <p>
+                            Research Collaboration
                         </p>
 
-                        <h3 class="reveal">
+                        <span>
+                            Cyprus University of Technology
+                        </span>
+
+                        <span>
+                            2025
+                        </span>
+
+                    </div>
+
+                    <div class="research-entry-content">
+
+                        <h3>
                             AIS-Based Vessel Movement Detection
                         </h3>
 
-                        <p class="research-question reveal">
-                            How can vessel movements be reliably identified
-                            from noisy and incomplete maritime data?
+                        <p class="research-question">
+                            How can vessel movements be identified reliably
+                            from noisy, incomplete and irregular maritime data?
                         </p>
 
-                        <div class="research-columns">
+                        <p>
+                            I developed and tested algorithms using Automatic
+                            Identification System data to detect vessel
+                            movement in maritime areas of interest.
+                        </p>
 
-                            <div class="research-copy reveal">
+                        <p>
+                            The work considered practical limitations such as
+                            reporting errors, missing observations, irregular
+                            transmissions and message constraints.
+                        </p>
 
-                                <p>
-                                    Automatic Identification System data contains
-                                    positional and navigational information
-                                    transmitted by maritime vessels.
-                                </p>
+                        <div class="keyword-list">
 
-                                <p>
-                                    During my research collaboration with the
-                                    Cyprus University of Technology, I developed
-                                    and tested algorithms for detecting vessel
-                                    movement within maritime areas of interest.
-                                </p>
+                            <span>
+                                Python
+                            </span>
 
-                                <p>
-                                    The project examined practical limitations
-                                    including reporting errors, irregular
-                                    transmissions, missing observations and
-                                    message constraints.
-                                </p>
+                            <span>
+                                AIS Data
+                            </span>
 
-                            </div>
+                            <span>
+                                Algorithm Development
+                            </span>
 
-                            <div class="research-graphic signal-graphic reveal">
-
-                                <div class="signal-map">
-
-                                    <span class="signal-route route-one"></span>
-                                    <span class="signal-route route-two"></span>
-                                    <span class="signal-route route-three"></span>
-
-                                    <span class="signal-point point-one"></span>
-                                    <span class="signal-point point-two"></span>
-                                    <span class="signal-point point-three"></span>
-                                    <span class="signal-point point-four"></span>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="research-methods reveal">
-
-                            <span>Python</span>
-                            <span>AIS Data</span>
-                            <span>Algorithm Development</span>
-                            <span>Data Analysis</span>
+                            <span>
+                                Data Analysis
+                            </span>
 
                         </div>
 
                         <button
-                            class="text-button reveal"
-                            data-popup="popup-ais"
+                            class="details-button"
+                            data-dialog="aisDialog"
                         >
-                            View research details
+                            Research details
                         </button>
 
                     </div>
 
                 </article>
 
-                <!-- =========================================
-                     RESEARCH TOPIC 3
-                ========================================== -->
+                <!-- RESEARCH ITEM 3 -->
 
-                <article class="research-topic">
+                <article class="research-entry reveal">
 
-                    <div class="research-topic-number reveal">
-                        03
-                    </div>
+                    <div class="research-entry-meta">
 
-                    <div class="research-topic-content">
-
-                        <p class="research-category reveal">
-                            Formal Methods
+                        <p>
+                            BSc Dissertation
                         </p>
 
-                        <h3 class="reveal">
-                            Synthetic Differential Geometry
+                        <span>
+                            University of Nottingham
+                        </span>
+
+                        <span>
+                            2024–2025
+                        </span>
+
+                    </div>
+
+                    <div class="research-entry-content">
+
+                        <h3>
+                            A Study of Synthetic Differential Geometry
                             in Type Theory
                         </h3>
 
-                        <p class="research-question reveal">
-                            How can mathematical structures be represented
-                            and verified using formal proof systems?
+                        <p class="research-question">
+                            How can advanced mathematical structures be
+                            represented and verified within a proof assistant?
                         </p>
 
-                        <div class="research-columns">
+                        <p>
+                            This work explored Synthetic Differential Geometry
+                            using Homotopy Type Theory, dependent type theory
+                            and the Agda proof assistant.
+                        </p>
 
-                            <div class="research-copy reveal">
+                        <p>
+                            I developed mechanically verified definitions and
+                            proofs involving curvature, metrics,
+                            transformations and geometric structures.
+                        </p>
 
-                                <p>
-                                    Formal methods allow mathematical definitions
-                                    and proofs to be represented in a form that
-                                    can be checked mechanically.
-                                </p>
+                        <div class="keyword-list">
 
-                                <p>
-                                    My undergraduate dissertation investigated
-                                    Synthetic Differential Geometry through
-                                    Homotopy Type Theory and the Agda proof
-                                    assistant.
-                                </p>
+                            <span>
+                                Agda
+                            </span>
 
-                                <p>
-                                    The work included mechanically verified
-                                    definitions and proofs involving curvature,
-                                    metrics, transformations and geometric
-                                    structures.
-                                </p>
+                            <span>
+                                Type Theory
+                            </span>
 
-                            </div>
+                            <span>
+                                Formal Proofs
+                            </span>
 
-                            <div class="research-graphic proof-graphic reveal">
-
-                                <span>λ</span>
-                                <span>⊢</span>
-                                <span>∀</span>
-
-                                <div class="proof-circle"></div>
-                                <div class="proof-square"></div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="research-methods reveal">
-
-                            <span>Agda</span>
-                            <span>Homotopy Type Theory</span>
-                            <span>Formal Proofs</span>
-                            <span>Mathematical Logic</span>
+                            <span>
+                                Mathematical Logic
+                            </span>
 
                         </div>
 
                         <button
-                            class="text-button reveal"
-                            data-popup="popup-sdg"
+                            class="details-button"
+                            data-dialog="formalDialog"
                         >
-                            View research details
+                            Research details
                         </button>
 
                     </div>
@@ -790,160 +623,135 @@
              PROJECTS
         ================================================== -->
 
-        <section id="projects" class="section soft-section">
+        <section
+            id="projects"
+            class="content-section"
+        >
 
-            <div class="section-container">
+            <div class="page-width">
 
-                <header class="section-header reveal">
+                <header class="section-heading reveal">
 
-                    <span class="section-number">
-                        05
-                    </span>
+                    <p class="section-label">
+                        Selected technical work
+                    </p>
 
-                    <div>
-
-                        <p class="section-label">
-                            Selected Work
-                        </p>
-
-                        <h2>
-                            Technical Projects
-                        </h2>
-
-                    </div>
+                    <h2>
+                        Projects
+                    </h2>
 
                 </header>
 
-                <div class="project-list">
+                <div class="project-grid">
 
-                    <article class="project-item reveal">
+                    <article class="project-box reveal">
 
-                        <span class="project-index">
-                            01
-                        </span>
+                        <p class="project-category">
+                            Artificial Intelligence
+                        </p>
 
-                        <div>
+                        <h3>
+                            Multi-Agent Coordination in Space Exploration
+                        </h3>
 
-                            <p class="project-type">
-                                Artificial Intelligence
-                            </p>
+                        <p>
+                            Developed a three-dimensional rover simulation
+                            comparing PPO, MADDPG and evolutionary algorithms
+                            under terrain, energy, navigation and coordination
+                            constraints.
+                        </p>
 
-                            <h3>
-                                Multi-Agent Coordination
-                                in Space Exploration
-                            </h3>
+                        <div class="keyword-list">
 
-                            <p>
-                                Developed a three-dimensional rover simulation
-                                in Python and compared PPO, MADDPG and evolutionary
-                                algorithms under terrain, energy, navigation and
-                                coordination constraints.
-                            </p>
+                            <span>
+                                Python
+                            </span>
 
-                            <div class="project-tags">
+                            <span>
+                                PPO
+                            </span>
 
-                                <span>Python</span>
-                                <span>PPO</span>
-                                <span>MADDPG</span>
-                                <span>Ursina</span>
+                            <span>
+                                MADDPG
+                            </span>
 
-                            </div>
+                            <span>
+                                Ursina
+                            </span>
 
                         </div>
-
-                        <button
-                            class="project-open"
-                            data-popup="popup-space"
-                            aria-label="Open project"
-                        >
-                            +
-                        </button>
 
                     </article>
 
-                    <article class="project-item reveal">
+                    <article class="project-box reveal">
 
-                        <span class="project-index">
-                            02
-                        </span>
+                        <p class="project-category">
+                            Natural Language Processing
+                        </p>
 
-                        <div>
+                        <h3>
+                            NLP-Based Travel Booking Chatbot
+                        </h3>
 
-                            <p class="project-type">
-                                Natural Language Processing
-                            </p>
+                        <p>
+                            Built a conversational AI system incorporating
+                            intent recognition, information retrieval and
+                            sentiment analysis for travel-booking interactions.
+                        </p>
 
-                            <h3>
-                                NLP-Based Travel Booking Chatbot
-                            </h3>
+                        <div class="keyword-list">
 
-                            <p>
-                                Developed a conversational AI system using intent
-                                recognition, information retrieval and sentiment
-                                analysis.
-                            </p>
+                            <span>
+                                Python
+                            </span>
 
-                            <div class="project-tags">
+                            <span>
+                                NLP
+                            </span>
 
-                                <span>Python</span>
-                                <span>NLP</span>
-                                <span>NLTK</span>
-                                <span>Conversational AI</span>
+                            <span>
+                                NLTK
+                            </span>
 
-                            </div>
+                            <span>
+                                Intent Recognition
+                            </span>
 
                         </div>
-
-                        <button
-                            class="project-open"
-                            data-popup="popup-chatbot"
-                            aria-label="Open project"
-                        >
-                            +
-                        </button>
 
                     </article>
 
-                    <article class="project-item reveal">
+                    <article class="project-box reveal">
 
-                        <span class="project-index">
-                            03
-                        </span>
+                        <p class="project-category">
+                            Software Engineering
+                        </p>
 
-                        <div>
+                        <h3>
+                            Nottingham and Union Rowing Club Application
+                        </h3>
 
-                            <p class="project-type">
-                                Software Engineering
-                            </p>
+                        <p>
+                            Co-developed a multi-platform application designed
+                            to improve navigation, accessibility and
+                            communication between the club and its members.
+                        </p>
 
-                            <h3>
-                                Nottingham and Union
-                                Rowing Club Application
-                            </h3>
+                        <div class="keyword-list">
 
-                            <p>
-                                Co-developed a multi-platform application to
-                                improve navigation, accessibility and member
-                                interaction.
-                            </p>
+                            <span>
+                                Application Development
+                            </span>
 
-                            <div class="project-tags">
+                            <span>
+                                UX
+                            </span>
 
-                                <span>Application Development</span>
-                                <span>UX</span>
-                                <span>Teamwork</span>
-
-                            </div>
+                            <span>
+                                Teamwork
+                            </span>
 
                         </div>
-
-                        <button
-                            class="project-open"
-                            data-popup="popup-rowing"
-                            aria-label="Open project"
-                        >
-                            +
-                        </button>
 
                     </article>
 
@@ -954,46 +762,39 @@
         </section>
 
         <!-- =================================================
-             BACKGROUND
+             EXPERIENCE
         ================================================== -->
 
-        <section id="background" class="section dark-section">
+        <section
+            id="experience"
+            class="content-section section-navy"
+        >
 
-            <div class="section-container">
+            <div class="page-width">
 
-                <header class="section-header dark-header reveal">
+                <header class="section-heading heading-light reveal">
 
-                    <span class="section-number">
-                        06
-                    </span>
+                    <p class="section-label">
+                        Background
+                    </p>
 
-                    <div>
-
-                        <p class="section-label">
-                            Background
-                        </p>
-
-                        <h2>
-                            Education and Experience
-                        </h2>
-
-                    </div>
+                    <h2>
+                        Education and Experience
+                    </h2>
 
                 </header>
 
-                <div class="timeline">
+                <div class="experience-list">
 
-                    <article class="timeline-entry reveal">
+                    <article class="experience-entry reveal">
 
-                        <div class="timeline-date">
-                            Sep 2025 – Present
-                        </div>
+                        <p class="experience-date">
+                            Sep 2025–Present
+                        </p>
 
-                        <div class="timeline-marker"></div>
+                        <div>
 
-                        <div class="timeline-content">
-
-                            <p class="timeline-category">
+                            <p class="experience-type">
                                 Education
                             </p>
 
@@ -1006,25 +807,24 @@
                             </h4>
 
                             <p>
-                                Machine learning, data analytics, natural
-                                language processing and advanced computer science.
+                                Machine learning, data analytics,
+                                natural language processing and advanced
+                                computer science.
                             </p>
 
                         </div>
 
                     </article>
 
-                    <article class="timeline-entry reveal">
+                    <article class="experience-entry reveal">
 
-                        <div class="timeline-date">
-                            Jun 2025 – Aug 2025
-                        </div>
+                        <p class="experience-date">
+                            Jun–Aug 2025
+                        </p>
 
-                        <div class="timeline-marker"></div>
+                        <div>
 
-                        <div class="timeline-content">
-
-                            <p class="timeline-category">
+                            <p class="experience-type">
                                 Research
                             </p>
 
@@ -1045,17 +845,15 @@
 
                     </article>
 
-                    <article class="timeline-entry reveal">
+                    <article class="experience-entry reveal">
 
-                        <div class="timeline-date">
-                            Sep 2022 – Jun 2025
-                        </div>
+                        <p class="experience-date">
+                            Sep 2022–Jun 2025
+                        </p>
 
-                        <div class="timeline-marker"></div>
+                        <div>
 
-                        <div class="timeline-content">
-
-                            <p class="timeline-category">
+                            <p class="experience-type">
                                 Education
                             </p>
 
@@ -1068,26 +866,24 @@
                             </h4>
 
                             <p>
-                                Artificial intelligence, formal methods,
-                                software engineering, security and
-                                human–AI interaction.
+                                Artificial intelligence, software engineering,
+                                formal methods, security and human–AI
+                                interaction.
                             </p>
 
                         </div>
 
                     </article>
 
-                    <article class="timeline-entry reveal">
+                    <article class="experience-entry reveal">
 
-                        <div class="timeline-date">
-                            Jun 2024 – Jul 2024
-                        </div>
+                        <p class="experience-date">
+                            Jun–Jul 2024
+                        </p>
 
-                        <div class="timeline-marker"></div>
+                        <div>
 
-                        <div class="timeline-content">
-
-                            <p class="timeline-category">
+                            <p class="experience-type">
                                 Industry
                             </p>
 
@@ -1100,25 +896,23 @@
                             </h4>
 
                             <p>
-                                Software testing, CI/CD automation,
-                                API validation and debugging.
+                                Software testing, API validation, debugging
+                                and CI/CD automation.
                             </p>
 
                         </div>
 
                     </article>
 
-                    <article class="timeline-entry reveal">
+                    <article class="experience-entry reveal">
 
-                        <div class="timeline-date">
-                            Jan 2025 – Jun 2025
-                        </div>
+                        <p class="experience-date">
+                            Jan–Jun 2025
+                        </p>
 
-                        <div class="timeline-marker"></div>
+                        <div>
 
-                        <div class="timeline-content">
-
-                            <p class="timeline-category">
+                            <p class="experience-type">
                                 Academic Community
                             </p>
 
@@ -1131,25 +925,23 @@
                             </h4>
 
                             <p>
-                                Supported interdisciplinary events,
-                                workshops and hackathon organisation.
+                                Supported interdisciplinary workshops,
+                                technical events and hackathon organisation.
                             </p>
 
                         </div>
 
                     </article>
 
-                    <article class="timeline-entry reveal">
+                    <article class="experience-entry reveal">
 
-                        <div class="timeline-date">
-                            Jun 2023 – Sep 2023
-                        </div>
+                        <p class="experience-date">
+                            Jun–Sep 2023
+                        </p>
 
-                        <div class="timeline-marker"></div>
+                        <div>
 
-                        <div class="timeline-content">
-
-                            <p class="timeline-category">
+                            <p class="experience-type">
                                 Industry
                             </p>
 
@@ -1162,8 +954,9 @@
                             </h4>
 
                             <p>
-                                Supported migration to a cloud-based
-                                crew-management platform.
+                                Supported a migration to a cloud-based
+                                crew-management platform through process
+                                analysis and data verification.
                             </p>
 
                         </div>
@@ -1180,72 +973,55 @@
              ACTIVITIES
         ================================================== -->
 
-        <section id="activities" class="section light-section">
+        <section
+            id="activities"
+            class="content-section"
+        >
 
-            <div class="section-container">
+            <div class="page-width">
 
-                <header class="section-header reveal">
+                <header class="section-heading reveal">
 
-                    <span class="section-number">
-                        07
-                    </span>
+                    <p class="section-label">
+                        Academic community
+                    </p>
 
-                    <div>
-
-                        <p class="section-label">
-                            Academic Community
-                        </p>
-
-                        <h2>
-                            Activities
-                        </h2>
-
-                    </div>
+                    <h2>
+                        Activities
+                    </h2>
 
                 </header>
 
-                <div class="activities-layout">
+                <div class="activity-grid">
 
-                    <article class="activity-card reveal">
-
-                        <span>
-                            01
-                        </span>
+                    <article class="activity-box reveal">
 
                         <h3>
                             MedTech Hackathon
                         </h3>
 
                         <p>
-                            Co-organised an interdisciplinary event bringing
-                            together participants from computing, medicine,
-                            engineering and related disciplines.
+                            Co-organised an interdisciplinary event involving
+                            students from computing, medicine, engineering
+                            and related disciplines.
                         </p>
 
                     </article>
 
-                    <article class="activity-card reveal">
-
-                        <span>
-                            02
-                        </span>
+                    <article class="activity-box reveal">
 
                         <h3>
                             European Youth Parliament
                         </h3>
 
                         <p>
-                            Developed experience in public speaking,
-                            collaborative discussion, teamwork and debate.
+                            Participated in public speaking, collaborative
+                            policy discussions, teamwork and debate.
                         </p>
 
                     </article>
 
-                    <article class="activity-card reveal">
-
-                        <span>
-                            03
-                        </span>
+                    <article class="activity-box reveal">
 
                         <h3>
                             Computing Communities
@@ -1260,92 +1036,17 @@
 
                 </div>
 
-            </div>
+                <div class="personal-note reveal">
 
-        </section>
+                    <p class="personal-label">
+                        Beyond research
+                    </p>
 
-        <!-- =================================================
-             SELF
-        ================================================== -->
-
-        <section id="self" class="section self-section">
-
-            <div class="section-container">
-
-                <header class="section-header reveal">
-
-                    <span class="section-number">
-                        08
-                    </span>
-
-                    <div>
-
-                        <p class="section-label">
-                            Beyond Research
-                        </p>
-
-                        <h2>
-                            Self
-                        </h2>
-
-                    </div>
-
-                </header>
-
-                <div class="self-grid">
-
-                    <article class="self-item reveal">
-
-                        <h3>
-                            Where I’m From
-                        </h3>
-
-                        <p>
-                            I am from Cyprus and have studied and worked across
-                            Cyprus and the United Kingdom.
-                        </p>
-
-                    </article>
-
-                    <article class="self-item reveal">
-
-                        <h3>
-                            Volleyball
-                        </h3>
-
-                        <p>
-                            I played volleyball with AEL in Cyprus, developing
-                            discipline, resilience and teamwork.
-                        </p>
-
-                    </article>
-
-                    <article class="self-item reveal">
-
-                        <h3>
-                            Classical Guitar
-                        </h3>
-
-                        <p>
-                            I hold Grade 5 in classical guitar and value music
-                            as a creative balance to technical work.
-                        </p>
-
-                    </article>
-
-                    <article class="self-item reveal">
-
-                        <h3>
-                            Languages
-                        </h3>
-
-                        <p>
-                            Greek — Native
-                            <br>
-                            English — Fluent
-                        </p>
-
-                    </article>
+                    <p>
+                        I am originally from Cyprus. Outside computer science,
+                        my interests include volleyball and classical guitar.
+                        I speak Greek natively and English fluently.
+                    </p>
 
                 </div>
 
@@ -1357,93 +1058,92 @@
              CONTACT
         ================================================== -->
 
-        <section id="contact" class="section contact-section">
+        <section
+            id="contact"
+            class="contact-section"
+        >
 
-            <div class="section-container">
+            <div class="page-width contact-layout">
 
-                <div class="contact-layout">
+                <div class="reveal">
 
-                    <div class="reveal">
+                    <p class="section-label contact-label">
+                        Contact
+                    </p>
 
-                        <p class="section-label light-label">
-                            Contact
-                        </p>
+                    <h2>
+                        Get in touch
+                    </h2>
 
-                        <h2>
-                            Let’s discuss research.
-                        </h2>
+                    <p>
+                        I welcome conversations about artificial intelligence,
+                        reinforcement learning, multi-agent systems, formal
+                        methods and interdisciplinary research.
+                    </p>
 
-                        <p>
-                            I welcome conversations about artificial intelligence,
-                            reinforcement learning, multi-agent systems, formal
-                            methods and interdisciplinary research.
-                        </p>
+                </div>
 
-                    </div>
+                <div class="contact-details reveal">
 
-                    <div class="contact-links reveal">
+                    <a href="mailto:yiotapapafiggou@gmail.com">
 
-                        <a href="mailto:yiotapapafiggou@gmail.com">
+                        <span>
+                            Email
+                        </span>
 
-                            <span>
-                                Email
-                            </span>
+                        <strong>
+                            yiotapapafiggou@gmail.com
+                        </strong>
 
-                            <strong>
-                                yiotapapafiggou@gmail.com
-                            </strong>
+                    </a>
 
-                        </a>
+                    <a
+                        href="https://www.linkedin.com/in/panayiota-papafiggou-88b97b300"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
 
-                        <a
-                            href="https://www.linkedin.com/in/panayiota-papafiggou-88b97b300"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <span>
+                            LinkedIn
+                        </span>
 
-                            <span>
-                                LinkedIn
-                            </span>
+                        <strong>
+                            View profile
+                        </strong>
 
-                            <strong>
-                                View profile
-                            </strong>
+                    </a>
 
-                        </a>
+                    <a
+                        href="https://github.com/yiota0707"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
 
-                        <a
-                            href="https://github.com/yiota0707"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <span>
+                            GitHub
+                        </span>
 
-                            <span>
-                                GitHub
-                            </span>
+                        <strong>
+                            github.com/yiota0707
+                        </strong>
 
-                            <strong>
-                                github.com/yiota0707
-                            </strong>
+                    </a>
 
-                        </a>
+                    <a
+                        href="cv.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
 
-                        <a
-                            href="cv.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <span>
+                            Curriculum Vitae
+                        </span>
 
-                            <span>
-                                Curriculum Vitae
-                            </span>
+                        <strong>
+                            Download PDF
+                        </strong>
 
-                            <strong>
-                                Download PDF
-                            </strong>
-
-                        </a>
-
-                    </div>
+                    </a>
 
                 </div>
 
@@ -1451,368 +1151,160 @@
 
         </section>
 
-        <!-- =================================================
-             FOOTER
-        ================================================== -->
-
-        <footer>
-
-            <div class="section-container footer-layout">
-
-                <p>
-                    © <span id="currentYear"></span>
-                    Panayiota Papafiggou
-                </p>
-
-                <a href="#home">
-                    Back to top
-                </a>
-
-            </div>
-
-        </footer>
-
     </main>
 
     <!-- =====================================================
-         POPUPS
+         FOOTER
     ====================================================== -->
 
-    <div class="popup" id="popup-cooperative-ai" aria-hidden="true">
+    <footer class="site-footer">
 
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Research Interest
-            </p>
-
-            <h2>
-                Cooperative Artificial Intelligence
-            </h2>
+        <div class="page-width footer-inner">
 
             <p>
-                Cooperative AI studies how intelligent agents can coordinate,
-                develop trust and achieve outcomes that are beneficial beyond
-                their own immediate objectives.
+                © <span id="currentYear"></span>
+                Panayiota Papafiggou
             </p>
 
-            <p>
-                I am especially interested in partner selection, social dilemmas,
-                strategic interaction and the emergence of cooperation between
-                reinforcement learning agents.
-            </p>
+            <a href="#home">
+                Back to top
+            </a>
 
         </div>
 
-    </div>
+    </footer>
 
-    <div class="popup" id="popup-decision-making" aria-hidden="true">
+    <!-- =====================================================
+         RESEARCH DIALOGS
+    ====================================================== -->
 
-        <div class="popup-overlay" data-close-popup></div>
+    <dialog
+        class="research-dialog"
+        id="dissertationDialog"
+    >
 
-        <div class="popup-window">
+        <button
+            class="dialog-close"
+            aria-label="Close dialog"
+        >
+            ×
+        </button>
 
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
+        <p class="dialog-label">
+            MSc Dissertation
+        </p>
 
-            <p class="popup-label">
-                Research Interest
-            </p>
+        <h2>
+            Assortative Matching and the Emergence of Cooperation
+            in Multi-Agent Reinforcement Learning Systems
+        </h2>
 
-            <h2>
-                Intelligent Decision-Making
-            </h2>
+        <p>
+            This project investigates how matching and partner-selection
+            mechanisms influence cooperation between reinforcement learning
+            agents in repeated Prisoner’s Dilemma environments.
+        </p>
 
-            <p>
-                Intelligent systems often need to act before every possible
-                outcome can be evaluated.
-            </p>
+        <p>
+            The work includes baseline and hybrid models, sensitivity
+            analyses, ablation studies, convergence evaluation,
+            population-size experiments and behavioural analysis.
+        </p>
 
-            <p>
-                I am interested in algorithms that learn from experience,
-                estimate future consequences and adapt their decisions under
-                uncertainty.
-            </p>
+        <div class="keyword-list">
 
-        </div>
+            <span>
+                Python
+            </span>
 
-    </div>
+            <span>
+                Q-Learning
+            </span>
 
-    <div class="popup" id="popup-engineering-ai" aria-hidden="true">
+            <span>
+                Multi-Agent Systems
+            </span>
 
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Research Interest
-            </p>
-
-            <h2>
-                AI for Engineering Systems
-            </h2>
-
-            <p>
-                Engineering data is frequently noisy, incomplete and generated
-                by systems whose behaviour changes over time.
-            </p>
-
-            <p>
-                I am interested in machine learning for diagnostics,
-                condition monitoring, anomaly detection and technical
-                decision support.
-            </p>
+            <span>
+                Statistical Analysis
+            </span>
 
         </div>
 
-    </div>
+    </dialog>
 
-    <div class="popup" id="popup-dissertation" aria-hidden="true">
+    <dialog
+        class="research-dialog"
+        id="aisDialog"
+    >
 
-        <div class="popup-overlay" data-close-popup></div>
+        <button
+            class="dialog-close"
+            aria-label="Close dialog"
+        >
+            ×
+        </button>
 
-        <div class="popup-window popup-wide">
+        <p class="dialog-label">
+            Research Collaboration
+        </p>
 
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
+        <h2>
+            AIS-Based Vessel Movement Detection
+        </h2>
 
-            <p class="popup-label">
-                MSc Dissertation Research
-            </p>
+        <p>
+            This project focused on implementing and evaluating algorithms
+            for detecting vessel movement within defined maritime areas.
+        </p>
 
-            <h2>
-                Assortative Matching and the Emergence of Cooperation
-                in Multi-Agent Reinforcement Learning Systems
-            </h2>
+        <p>
+            The work considered noisy observations, irregular transmissions,
+            reporting errors, missing messages and other practical
+            limitations of AIS data.
+        </p>
 
-            <p>
-                This research investigates how matching and partner-selection
-                mechanisms influence cooperation between reinforcement learning
-                agents in repeated Prisoner’s Dilemma environments.
-            </p>
+        <p>
+            The research was conducted at the Cyprus University of Technology
+            under the supervision of Associate Professor Herodotos Herodotou.
+        </p>
 
-            <p>
-                The work includes baseline and hybrid models, large-scale
-                simulations, sensitivity analysis, ablation studies, convergence
-                analysis, population experiments and behavioural evaluation.
-            </p>
+    </dialog>
 
-            <div class="popup-tags">
+    <dialog
+        class="research-dialog"
+        id="formalDialog"
+    >
 
-                <span>Python</span>
-                <span>Q-Learning</span>
-                <span>Multi-Agent Systems</span>
-                <span>Statistical Analysis</span>
+        <button
+            class="dialog-close"
+            aria-label="Close dialog"
+        >
+            ×
+        </button>
 
-            </div>
+        <p class="dialog-label">
+            BSc Dissertation
+        </p>
 
-        </div>
+        <h2>
+            A Study of Synthetic Differential Geometry
+            in Type Theory
+        </h2>
 
-    </div>
+        <p>
+            This dissertation investigated the formalisation of Synthetic
+            Differential Geometry using Homotopy Type Theory, dependent
+            type theory and the Agda proof assistant.
+        </p>
 
-    <div class="popup" id="popup-ais" aria-hidden="true">
+        <p>
+            The project included mechanically checked definitions and
+            proofs involving curvature, metrics, transformations and
+            geometric structures.
+        </p>
 
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window popup-wide">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Research Collaboration
-            </p>
-
-            <h2>
-                AIS-Based Vessel Movement Detection
-            </h2>
-
-            <p>
-                The project focused on implementing and testing algorithms
-                for detecting vessel movement within maritime areas of interest.
-            </p>
-
-            <p>
-                It considered real-world AIS limitations, including noise,
-                incomplete observations, reporting errors, irregular messages
-                and transmission constraints.
-            </p>
-
-            <p>
-                The work was completed at the Cyprus University of Technology
-                under the supervision of Associate Professor Herodotos Herodotou.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="popup" id="popup-sdg" aria-hidden="true">
-
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window popup-wide">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Undergraduate Dissertation
-            </p>
-
-            <h2>
-                A Study of Synthetic Differential Geometry
-                in Type Theory
-            </h2>
-
-            <p>
-                This project investigated the formalisation of Synthetic
-                Differential Geometry using Homotopy Type Theory and Agda.
-            </p>
-
-            <p>
-                It included mechanically verified definitions and proofs
-                involving curvature, metrics, geometric transformations and
-                mathematical structures.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="popup" id="popup-space" aria-hidden="true">
-
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Artificial Intelligence Project
-            </p>
-
-            <h2>
-                Multi-Agent Coordination in Space Exploration
-            </h2>
-
-            <p>
-                A three-dimensional rover simulation comparing PPO,
-                MADDPG and evolutionary algorithms under terrain,
-                navigation, energy and coordination constraints.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="popup" id="popup-chatbot" aria-hidden="true">
-
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Natural Language Processing
-            </p>
-
-            <h2>
-                NLP-Based Travel Booking Chatbot
-            </h2>
-
-            <p>
-                A conversational AI system incorporating intent recognition,
-                information retrieval and sentiment analysis for
-                travel-booking interactions.
-            </p>
-
-        </div>
-
-    </div>
-
-    <div class="popup" id="popup-rowing" aria-hidden="true">
-
-        <div class="popup-overlay" data-close-popup></div>
-
-        <div class="popup-window">
-
-            <button
-                class="popup-close"
-                data-close-popup
-                aria-label="Close popup"
-            >
-                ×
-            </button>
-
-            <p class="popup-label">
-                Software Engineering
-            </p>
-
-            <h2>
-                Nottingham and Union Rowing Club Application
-            </h2>
-
-            <p>
-                A multi-platform application developed to replace the club’s
-                website and improve navigation, accessibility and communication
-                with members.
-            </p>
-
-        </div>
-
-    </div>
+    </dialog>
 
     <script src="script.js"></script>
 

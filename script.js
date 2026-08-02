@@ -1,20 +1,20 @@
 // =========================================================
-// MOBILE MENU
+// MOBILE NAVIGATION
 // =========================================================
 
-const mobileMenuButton =
-    document.getElementById("mobileMenuButton");
+const menuButton =
+    document.getElementById("menuButton");
 
-const sidebar =
-    document.getElementById("sidebar");
+const mainNavigation =
+    document.getElementById("mainNavigation");
 
-mobileMenuButton.addEventListener(
+menuButton.addEventListener(
     "click",
     () => {
         const isOpen =
-            sidebar.classList.toggle("open");
+            mainNavigation.classList.toggle("open");
 
-        mobileMenuButton.setAttribute(
+        menuButton.setAttribute(
             "aria-expanded",
             String(isOpen)
         );
@@ -22,14 +22,16 @@ mobileMenuButton.addEventListener(
 );
 
 document
-    .querySelectorAll(".sidebar-navigation a")
+    .querySelectorAll(".main-navigation a")
     .forEach((link) => {
         link.addEventListener(
             "click",
             () => {
-                sidebar.classList.remove("open");
+                mainNavigation.classList.remove(
+                    "open"
+                );
 
-                mobileMenuButton.setAttribute(
+                menuButton.setAttribute(
                     "aria-expanded",
                     "false"
                 );
@@ -46,19 +48,21 @@ const revealObserver =
     new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add(
-                        "visible"
-                    );
-
-                    revealObserver.unobserve(
-                        entry.target
-                    );
+                if (!entry.isIntersecting) {
+                    return;
                 }
+
+                entry.target.classList.add(
+                    "visible"
+                );
+
+                revealObserver.unobserve(
+                    entry.target
+                );
             });
         },
         {
-            threshold: 0.12
+            threshold: 0.1
         }
     );
 
@@ -70,159 +74,63 @@ document
 
 
 // =========================================================
-// ACTIVE SIDEBAR SECTION
+// RESEARCH DIALOGS
 // =========================================================
 
-const pageSections =
-    document.querySelectorAll(
-        "main section[id]"
-    );
+document
+    .querySelectorAll("[data-dialog]")
+    .forEach((button) => {
+        button.addEventListener(
+            "click",
+            () => {
+                const dialog =
+                    document.getElementById(
+                        button.dataset.dialog
+                    );
 
-const navigationLinks =
-    document.querySelectorAll(
-        ".nav-link"
-    );
-
-const sectionObserver =
-    new IntersectionObserver(
-        (entries) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) {
+                if (!dialog) {
                     return;
                 }
 
-                navigationLinks.forEach(
-                    (link) => {
-                        link.classList.remove(
-                            "active"
-                        );
-
-                        const target =
-                            link.getAttribute(
-                                "href"
-                            );
-
-                        if (
-                            target ===
-                            `#${entry.target.id}`
-                        ) {
-                            link.classList.add(
-                                "active"
-                            );
-                        }
-                    }
-                );
-            });
-        },
-        {
-            rootMargin:
-                "-35% 0px -55% 0px"
-        }
-    );
-
-pageSections.forEach((section) => {
-    sectionObserver.observe(section);
-});
-
-
-// =========================================================
-// POPUPS
-// =========================================================
-
-const popupButtons =
-    document.querySelectorAll(
-        "[data-popup]"
-    );
-
-const popupCloseButtons =
-    document.querySelectorAll(
-        "[data-close-popup]"
-    );
-
-const popups =
-    document.querySelectorAll(
-        ".popup"
-    );
-
-function openPopup(popupId) {
-    const popup =
-        document.getElementById(
-            popupId
-        );
-
-    if (!popup) {
-        return;
-    }
-
-    popup.classList.add("active");
-
-    popup.setAttribute(
-        "aria-hidden",
-        "false"
-    );
-
-    document.body.classList.add(
-        "popup-active"
-    );
-}
-
-function closePopup(popup) {
-    if (!popup) {
-        return;
-    }
-
-    popup.classList.remove("active");
-
-    popup.setAttribute(
-        "aria-hidden",
-        "true"
-    );
-
-    document.body.classList.remove(
-        "popup-active"
-    );
-}
-
-popupButtons.forEach((button) => {
-    button.addEventListener(
-        "click",
-        () => {
-            openPopup(
-                button.dataset.popup
-            );
-        }
-    );
-});
-
-popupCloseButtons.forEach((button) => {
-    button.addEventListener(
-        "click",
-        () => {
-            closePopup(
-                button.closest(".popup")
-            );
-        }
-    );
-});
-
-document.addEventListener(
-    "keydown",
-    (event) => {
-        if (event.key !== "Escape") {
-            return;
-        }
-
-        popups.forEach((popup) => {
-            if (
-                popup.classList.contains(
-                    "active"
-                )
-            ) {
-                closePopup(popup);
+                dialog.showModal();
             }
-        });
-    }
-);
+        );
+    });
+
+document
+    .querySelectorAll(".dialog-close")
+    .forEach((button) => {
+        button.addEventListener(
+            "click",
+            () => {
+                button
+                    .closest("dialog")
+                    .close();
+            }
+        );
+    });
+
+document
+    .querySelectorAll("dialog")
+    .forEach((dialog) => {
+        dialog.addEventListener(
+            "click",
+            (event) => {
+                const rectangle =
+                    dialog.getBoundingClientRect();
+
+                const clickedOutside =
+                    event.clientX < rectangle.left ||
+                    event.clientX > rectangle.right ||
+                    event.clientY < rectangle.top ||
+                    event.clientY > rectangle.bottom;
+
+                if (clickedOutside) {
+                    dialog.close();
+                }
+            }
+        );
+    });
 
 
 // =========================================================
