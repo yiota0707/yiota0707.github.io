@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
@@ -11,7 +10,12 @@
 
     <meta
         name="description"
-        content="Academic website of Panayiota Papafiggou. Research interests include artificial intelligence, reinforcement learning, multi-agent systems, formal methods and intelligent engineering applications."
+        content="Academic website of Panayiota Papafiggou, focusing on artificial intelligence, reinforcement learning, multi-agent systems, formal methods and engineering applications."
+    >
+
+    <meta
+        name="keywords"
+        content="Panayiota Papafiggou, Artificial Intelligence, Machine Learning, Reinforcement Learning, Multi-Agent Systems, Academic Research, Formal Methods"
     >
 
     <meta name="author" content="Panayiota Papafiggou">
@@ -20,1066 +24,1413 @@
         Panayiota Papafiggou | Artificial Intelligence Research
     </title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================================================
+    <div
+        class="cursor-glow"
+        aria-hidden="true"
+    ></div>
+
+    <!-- =====================================================
          NAVIGATION
-    ================================================= -->
+    ====================================================== -->
 
     <header class="site-header">
 
-        <nav class="navigation">
+        <div class="nav-shell">
 
-            <a class="site-name" href="#home">
-                Panayiota Papafiggou
+            <a
+                class="brand"
+                href="#home"
+                aria-label="Go to homepage"
+            >
+
+                <span class="brand-mark">
+                    PP
+                </span>
+
+                <span class="brand-text">
+
+                    <strong>
+                        Panayiota Papafiggou
+                    </strong>
+
+                    <small>
+                        Artificial Intelligence Research
+                    </small>
+
+                </span>
+
             </a>
 
             <button
-                class="menu-button"
-                id="menuButton"
-                aria-label="Open navigation menu"
+                class="nav-toggle"
+                id="navToggle"
+                aria-label="Open navigation"
                 aria-expanded="false"
             >
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
 
-            <div class="nav-links" id="navLinks">
-                <a href="#about">About</a>
-                <a href="#research">Research</a>
-                <a href="#projects">Projects</a>
-                <a href="#background">Background</a>
-                <a href="#activities">Activities</a>
-                <a href="#contact">Contact</a>
-            </div>
+            <nav
+                class="main-nav"
+                id="mainNav"
+            >
 
-        </nav>
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#cv">
+                    CV
+                </a>
+
+                <a href="#research">
+                    Research
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#background">
+                    Background
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
 
     </header>
 
-
-    <!-- ================================================
+    <!-- =====================================================
          MAIN CONTENT
-    ================================================= -->
+    ====================================================== -->
 
-    <main id="home">
+    <main>
 
-        <!-- ============================================
-             INTRODUCTION
-        ============================================= -->
+        <!-- =================================================
+             HERO
+        ================================================== -->
 
-        <section class="intro">
+        <section
+            id="home"
+            class="hero section-dark"
+        >
 
-            <div class="intro-main">
+            <div class="hero-orb hero-orb-one"></div>
+            <div class="hero-orb hero-orb-two"></div>
 
-                <p class="intro-label">
-                    Artificial Intelligence · Multi-Agent Systems ·
-                    Reinforcement Learning
-                </p>
+            <div class="container hero-grid">
 
-                <h1>
-                    Panayiota Papafiggou
-                </h1>
+                <div class="hero-copy reveal">
 
-                <p class="intro-title">
-                    MSc Computer Science student at the University of Warwick
-                </p>
-
-                <p class="intro-description">
-                    I am interested in artificial intelligence, particularly
-                    reinforcement learning, multi-agent systems, intelligent
-                    decision-making and the application of machine learning to
-                    complex real-world problems.
-                </p>
-
-                <p class="intro-description">
-                    My long-term goal is to contribute to the development of
-                    artificial intelligence through academic research,
-                    collaboration and teaching.
-                </p>
-
-                <div class="intro-links">
-
-                    <a
-                        class="primary-link"
-                        href="cv.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Download CV
-                    </a>
-
-                    <a href="mailto:yiotapapafiggou@gmail.com">
-                        Email
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/panayiota-papafiggou-88b97b300"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                    <a
-                        href="https://github.com/yiota0707"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                </div>
-
-            </div>
-
-            <aside class="intro-sidebar">
-
-                <h2>Research interests</h2>
-
-                <ul>
-                    <li>Multi-Agent Reinforcement Learning</li>
-                    <li>Cooperative Artificial Intelligence</li>
-                    <li>Intelligent Decision-Making</li>
-                    <li>AI for Engineering Systems</li>
-                    <li>Formal Methods and Type Theory</li>
-                </ul>
-
-                <div class="sidebar-contact">
-
-                    <p>
-                        <strong>Location</strong><br>
-                        United Kingdom
+                    <p class="eyebrow">
+                        Artificial Intelligence · Multi-Agent Systems · Reinforcement Learning
                     </p>
 
-                    <p>
-                        <strong>Email</strong><br>
-                        <a href="mailto:yiotapapafiggou@gmail.com">
-                            yiotapapafiggou@gmail.com
+                    <h1>
+                        Panayiota
+                        <br>
+                        <span>
+                            Papafiggou
+                        </span>
+                    </h1>
+
+                    <p class="hero-lead">
+                        MSc Computer Science student at the University of Warwick
+                        with research interests in artificial intelligence,
+                        reinforcement learning, multi-agent systems and
+                        intelligent decision-making.
+                    </p>
+
+                    <p class="hero-sub">
+                        I am interested in how autonomous agents learn,
+                        cooperate and make decisions in complex environments,
+                        and in applying machine learning to real-world
+                        scientific and engineering problems.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <a
+                            class="button button-primary"
+                            href="#research"
+                        >
+                            Explore research
                         </a>
-                    </p>
+
+                        <a
+                            class="button button-ghost"
+                            href="cv.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View CV
+                        </a>
+
+                    </div>
+
+                    <div class="hero-social">
+
+                        <a href="mailto:yiotapapafiggou@gmail.com">
+                            Email
+                        </a>
+
+                        <span>•</span>
+
+                        <a
+                            href="https://www.linkedin.com/in/panayiota-papafiggou-88b97b300"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+
+                        <span>•</span>
+
+                        <a
+                            href="https://github.com/yiota0707"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
 
                 </div>
 
-            </aside>
+                <aside class="hero-profile reveal">
 
-        </section>
+                    <div class="profile-glass">
 
+                        <div class="profile-topline">
 
-        <!-- ============================================
-             ABOUT
-        ============================================= -->
+                            <span>
+                                Current academic focus
+                            </span>
 
-        <section id="about" class="content-section">
+                            <span class="status-dot"></span>
 
-            <div class="section-title">
-                <p>About</p>
-                <h2>About Me</h2>
-            </div>
+                        </div>
 
-            <div class="text-column">
+                        <div class="profile-monogram">
+                            PP
+                        </div>
 
-                <p class="lead">
-                    I am an MSc Computer Science student at the University of
-                    Warwick with an academic background spanning artificial
-                    intelligence, machine learning, formal methods and software
-                    engineering.
-                </p>
+                        <h2>
+                            Researching intelligent systems that learn,
+                            interact and adapt.
+                        </h2>
 
-                <p>
-                    I am interested in understanding how autonomous agents
-                    learn, cooperate and make decisions in complex
-                    environments. I am particularly drawn to research that
-                    combines theoretical questions about learning and
-                    interaction with practical applications of artificial
-                    intelligence.
-                </p>
+                        <ul class="focus-list">
 
-                <p>
-                    My experience includes algorithm development, computational
-                    modelling, data analysis, formal proof development and
-                    interdisciplinary research. I have worked on projects in
-                    multi-agent coordination, maritime data analysis,
-                    conversational AI and mathematical formalisation.
-                </p>
+                            <li>
+                                <span>01</span>
+                                Multi-Agent Reinforcement Learning
+                            </li>
 
-            </div>
+                            <li>
+                                <span>02</span>
+                                Cooperative Artificial Intelligence
+                            </li>
 
-        </section>
+                            <li>
+                                <span>03</span>
+                                AI for Engineering Systems
+                            </li>
 
+                            <li>
+                                <span>04</span>
+                                Formal and Mathematical Methods
+                            </li>
 
-        <!-- ============================================
-             CV
-        ============================================= -->
+                        </ul>
 
-        <section class="cv-section">
+                    </div>
 
-            <div>
-
-                <p class="small-heading">
-                    Curriculum Vitae
-                </p>
-
-                <h2>
-                    Academic background, research experience and selected work
-                </h2>
+                </aside>
 
             </div>
 
             <a
-                class="cv-button"
-                href="cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                class="scroll-cue"
+                href="#about"
+                aria-label="Scroll to about section"
             >
-                View my CV
+
+                <span>
+                    Scroll
+                </span>
+
+                <i></i>
+
             </a>
 
         </section>
 
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
 
-        <!-- ============================================
+        <section
+            id="about"
+            class="section section-light"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="kicker">
+                        About me
+                    </p>
+
+                    <h2>
+                        Research-driven, interdisciplinary and curious.
+                    </h2>
+
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-statement reveal">
+
+                        <p>
+                            I am an MSc Computer Science student at the
+                            University of Warwick with an academic background
+                            spanning artificial intelligence, machine learning,
+                            formal methods and software engineering.
+                        </p>
+
+                    </div>
+
+                    <div class="about-detail reveal">
+
+                        <p>
+                            My interests centre on how intelligent systems
+                            learn, cooperate and make decisions in complex
+                            environments. I am particularly drawn to work that
+                            connects theoretical questions about learning and
+                            interaction with practical scientific and
+                            engineering applications.
+                        </p>
+
+                        <p>
+                            My experience includes algorithm development,
+                            computational modelling, simulation, data analysis,
+                            formal proof development and interdisciplinary
+                            research. My long-term goal is to contribute to
+                            artificial intelligence through academic research,
+                            teaching and collaboration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="interest-strip reveal">
+
+                    <div>
+
+                        <strong>
+                            Research interests
+                        </strong>
+
+                        <span>
+                            Multi-agent systems
+                        </span>
+
+                        <span>
+                            Reinforcement learning
+                        </span>
+
+                        <span>
+                            Cooperative AI
+                        </span>
+
+                        <span>
+                            Engineering applications
+                        </span>
+
+                        <span>
+                            Formal methods
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             CV BANNER
+        ================================================== -->
+
+        <section
+            id="cv"
+            class="cv-banner"
+        >
+
+            <div class="container cv-banner-inner reveal">
+
+                <div>
+
+                    <p class="kicker kicker-light">
+                        Curriculum Vitae
+                    </p>
+
+                    <h2>
+                        Academic background, research experience and selected work.
+                    </h2>
+
+                </div>
+
+                <a
+                    class="button button-light"
+                    href="cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Open CV
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
              RESEARCH
-        ============================================= -->
+        ================================================== -->
 
-        <section id="research" class="content-section">
+        <section
+            id="research"
+            class="section section-soft"
+        >
 
-            <div class="section-title">
+            <div class="container">
 
-                <p>Research</p>
+                <div class="section-heading centered reveal">
 
-                <h2>
-                    Research Interests
-                </h2>
+                    <p class="kicker">
+                        Research
+                    </p>
+
+                    <h2>
+                        Questions that shape my academic interests.
+                    </h2>
+
+                    <p class="section-intro">
+                        I am interested in intelligent systems that learn from
+                        experience, interact with other agents and operate
+                        under uncertainty.
+                    </p>
+
+                </div>
+
+                <div class="research-accordion">
+
+                    <!-- RESEARCH PANEL 1 -->
+
+                    <article class="research-panel reveal open">
+
+                        <button
+                            class="research-trigger"
+                            aria-expanded="true"
+                        >
+
+                            <span class="panel-number">
+                                01
+                            </span>
+
+                            <span class="panel-heading">
+
+                                <small>
+                                    Cooperative artificial intelligence
+                                </small>
+
+                                <strong>
+                                    Multi-Agent Systems and Cooperation
+                                </strong>
+
+                            </span>
+
+                            <span class="panel-icon">
+                                +
+                            </span>
+
+                        </button>
+
+                        <div class="research-content">
+
+                            <div>
+
+                                <p class="research-question">
+                                    How can autonomous agents learn to cooperate
+                                    when their individual objectives may conflict?
+                                </p>
+
+                                <p>
+                                    I am interested in the mechanisms that
+                                    influence cooperation, partner selection,
+                                    strategic behaviour and coordination between
+                                    learning agents.
+                                </p>
+
+                                <p>
+                                    This includes reinforcement learning, social
+                                    dilemmas, adaptive interaction and the
+                                    emergence of collective behaviour from
+                                    individual decisions.
+                                </p>
+
+                                <div class="tag-row">
+
+                                    <span>
+                                        Reinforcement Learning
+                                    </span>
+
+                                    <span>
+                                        Multi-Agent Systems
+                                    </span>
+
+                                    <span>
+                                        Cooperation
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="research-visual visual-network"
+                                aria-hidden="true"
+                            >
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- RESEARCH PANEL 2 -->
+
+                    <article class="research-panel reveal">
+
+                        <button
+                            class="research-trigger"
+                            aria-expanded="false"
+                        >
+
+                            <span class="panel-number">
+                                02
+                            </span>
+
+                            <span class="panel-heading">
+
+                                <small>
+                                    Learning under uncertainty
+                                </small>
+
+                                <strong>
+                                    Intelligent Decision-Making
+                                </strong>
+
+                            </span>
+
+                            <span class="panel-icon">
+                                +
+                            </span>
+
+                        </button>
+
+                        <div class="research-content">
+
+                            <div>
+
+                                <p class="research-question">
+                                    How should an intelligent system make
+                                    decisions when information is incomplete
+                                    or constantly changing?
+                                </p>
+
+                                <p>
+                                    I am interested in learning algorithms that
+                                    estimate future consequences, adapt over
+                                    time and support autonomous decision-making
+                                    under uncertainty.
+                                </p>
+
+                                <p>
+                                    This includes reinforcement learning,
+                                    simulation-based approaches and adaptive
+                                    systems that improve through experience.
+                                </p>
+
+                                <div class="tag-row">
+
+                                    <span>
+                                        Decision-Making
+                                    </span>
+
+                                    <span>
+                                        Simulation
+                                    </span>
+
+                                    <span>
+                                        Autonomous Systems
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="research-visual visual-orbit"
+                                aria-hidden="true"
+                            >
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- RESEARCH PANEL 3 -->
+
+                    <article class="research-panel reveal">
+
+                        <button
+                            class="research-trigger"
+                            aria-expanded="false"
+                        >
+
+                            <span class="panel-number">
+                                03
+                            </span>
+
+                            <span class="panel-heading">
+
+                                <small>
+                                    Applied machine learning
+                                </small>
+
+                                <strong>
+                                    AI for Engineering Systems
+                                </strong>
+
+                            </span>
+
+                            <span class="panel-icon">
+                                +
+                            </span>
+
+                        </button>
+
+                        <div class="research-content">
+
+                            <div>
+
+                                <p class="research-question">
+                                    How can machine learning help us understand
+                                    and monitor complex physical systems?
+                                </p>
+
+                                <p>
+                                    I am interested in intelligent diagnostics,
+                                    condition monitoring and predictive methods
+                                    for noisy, incomplete and changing
+                                    engineering data.
+                                </p>
+
+                                <p>
+                                    More broadly, I am interested in the use of
+                                    artificial intelligence to support reliable
+                                    real-world technical decisions.
+                                </p>
+
+                                <div class="tag-row">
+
+                                    <span>
+                                        Applied AI
+                                    </span>
+
+                                    <span>
+                                        Diagnostics
+                                    </span>
+
+                                    <span>
+                                        Engineering Data
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="research-visual visual-wave"
+                                aria-hidden="true"
+                            >
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- RESEARCH PANEL 4 -->
+
+                    <article class="research-panel reveal">
+
+                        <button
+                            class="research-trigger"
+                            aria-expanded="false"
+                        >
+
+                            <span class="panel-number">
+                                04
+                            </span>
+
+                            <span class="panel-heading">
+
+                                <small>
+                                    Rigorous computation
+                                </small>
+
+                                <strong>
+                                    Formal Methods and Mathematical Foundations
+                                </strong>
+
+                            </span>
+
+                            <span class="panel-icon">
+                                +
+                            </span>
+
+                        </button>
+
+                        <div class="research-content">
+
+                            <div>
+
+                                <p class="research-question">
+                                    How can mathematical and formal tools help
+                                    us reason rigorously about computational systems?
+                                </p>
+
+                                <p>
+                                    My interests include type theory, proof
+                                    assistants, formal verification and
+                                    mathematical logic.
+                                </p>
+
+                                <p>
+                                    I am especially interested in situations
+                                    where rigorous methods can improve the
+                                    reliability and clarity of computational
+                                    research.
+                                </p>
+
+                                <div class="tag-row">
+
+                                    <span>
+                                        Formal Methods
+                                    </span>
+
+                                    <span>
+                                        Type Theory
+                                    </span>
+
+                                    <span>
+                                        Agda
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                            <div
+                                class="research-visual visual-proof"
+                                aria-hidden="true"
+                            >
+
+                                <span>λ</span>
+                                <span>⊢</span>
+                                <span>∀</span>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
-
-            <div class="research-introduction">
-
-                <p class="lead">
-                    I am interested in the design and analysis of intelligent
-                    systems that learn from experience, interact with other
-                    agents and operate in complex environments.
-                </p>
-
-                <p>
-                    The questions below describe the main themes that currently
-                    shape my academic interests.
-                </p>
-
-            </div>
-
-
-            <!-- RESEARCH TOPIC 1 -->
-
-            <article class="research-topic">
-
-                <p class="topic-number">01</p>
-
-                <div class="topic-content">
-
-                    <h3>
-                        Multi-Agent Systems and Cooperative AI
-                    </h3>
-
-                    <p class="research-question">
-                        How can autonomous agents learn to cooperate when their
-                        individual goals may conflict?
-                    </p>
-
-                    <p>
-                        Multi-agent systems involve several intelligent agents
-                        learning, acting and adapting within a shared
-                        environment. I am interested in the mechanisms that
-                        influence cooperation, strategic behaviour and
-                        coordination between agents.
-                    </p>
-
-                    <p>
-                        This includes reinforcement learning, partner selection,
-                        social dilemmas, adaptive interaction and the emergence
-                        of collective behaviour from individual decision-making.
-                    </p>
-
-                    <div class="keywords">
-                        <span>Reinforcement Learning</span>
-                        <span>Multi-Agent Systems</span>
-                        <span>Cooperation</span>
-                        <span>Agent-Based Modelling</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- RESEARCH TOPIC 2 -->
-
-            <article class="research-topic">
-
-                <p class="topic-number">02</p>
-
-                <div class="topic-content">
-
-                    <h3>
-                        Intelligent Decision-Making
-                    </h3>
-
-                    <p class="research-question">
-                        How should an intelligent system make decisions when
-                        information is incomplete, uncertain or constantly
-                        changing?
-                    </p>
-
-                    <p>
-                        Many real-world systems cannot evaluate every possible
-                        outcome before acting. Intelligent agents must instead
-                        learn from experience, estimate future consequences and
-                        adapt their behaviour over time.
-                    </p>
-
-                    <p>
-                        I am interested in learning algorithms that support
-                        autonomous decision-making under uncertainty, including
-                        reinforcement learning and simulation-based approaches.
-                    </p>
-
-                    <div class="keywords">
-                        <span>Decision-Making</span>
-                        <span>Learning Algorithms</span>
-                        <span>Simulation</span>
-                        <span>Autonomous Systems</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- RESEARCH TOPIC 3 -->
-
-            <article class="research-topic">
-
-                <p class="topic-number">03</p>
-
-                <div class="topic-content">
-
-                    <h3>
-                        Artificial Intelligence for Engineering Systems
-                    </h3>
-
-                    <p class="research-question">
-                        How can machine learning help us understand and monitor
-                        complex physical and engineering systems?
-                    </p>
-
-                    <p>
-                        Engineering data is often noisy, incomplete and
-                        generated by systems whose behaviour changes over time.
-                        Machine learning can help identify patterns, detect
-                        unusual behaviour and support more informed technical
-                        decisions.
-                    </p>
-
-                    <p>
-                        I am interested in intelligent diagnostics, condition
-                        monitoring, predictive methods and the application of
-                        AI to complex real-world systems.
-                    </p>
-
-                    <div class="keywords">
-                        <span>Applied Machine Learning</span>
-                        <span>Diagnostics</span>
-                        <span>Condition Monitoring</span>
-                        <span>Engineering Data</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- RESEARCH TOPIC 4 -->
-
-            <article class="research-topic">
-
-                <p class="topic-number">04</p>
-
-                <div class="topic-content">
-
-                    <h3>
-                        Formal Methods and Mathematical Foundations
-                    </h3>
-
-                    <p class="research-question">
-                        How can mathematical and formal tools help us reason
-                        more rigorously about computational systems?
-                    </p>
-
-                    <p>
-                        Formal methods provide tools for expressing definitions,
-                        algorithms and mathematical arguments in a precise and
-                        verifiable way.
-                    </p>
-
-                    <p>
-                        My interests include type theory, proof assistants,
-                        formal verification and the mathematical foundations of
-                        computer science and artificial intelligence.
-                    </p>
-
-                    <div class="keywords">
-                        <span>Formal Methods</span>
-                        <span>Type Theory</span>
-                        <span>Agda</span>
-                        <span>Mathematical Logic</span>
-                    </div>
-
-                </div>
-
-            </article>
 
         </section>
 
-
-        <!-- ============================================
+        <!-- =================================================
              PROJECTS
-        ============================================= -->
+        ================================================== -->
 
-        <section id="projects" class="content-section">
+        <section
+            id="projects"
+            class="section section-light"
+        >
 
-            <div class="section-title">
+            <div class="container">
 
-                <p>Selected Work</p>
+                <div class="section-heading reveal">
 
-                <h2>
-                    Research and Projects
-                </h2>
-
-            </div>
-
-
-            <!-- PROJECT 1 -->
-
-            <article class="project-entry">
-
-                <div class="project-information">
-
-                    <p class="project-type">
-                        Research Collaboration
+                    <p class="kicker">
+                        Selected work
                     </p>
 
-                    <p class="project-year">
-                        2025
-                    </p>
+                    <h2>
+                        Research and technical projects.
+                    </h2>
 
                 </div>
 
-                <div class="project-description">
+                <div class="project-grid">
 
-                    <h3>
-                        AIS-Based Vessel Movement Detection
-                    </h3>
+                    <!-- PROJECT 1 -->
 
-                    <p class="project-organisation">
-                        Cyprus University of Technology
-                    </p>
+                    <article class="project-card featured reveal">
 
-                    <p>
-                        I worked in the Department of Electrical Engineering,
-                        Computer Engineering and Informatics on the
-                        implementation of algorithms for detecting vessel
-                        movements in maritime areas of interest.
-                    </p>
+                        <div class="project-card-top">
 
-                    <p>
-                        The project used Automatic Identification System data
-                        and considered practical challenges including noise,
-                        reporting errors, missing information and message
-                        constraints. The work involved algorithm development,
-                        testing and analysis of vessel behaviour.
-                    </p>
+                            <span class="project-type">
+                                Research Collaboration
+                            </span>
 
-                    <p class="tools">
-                        Python · Algorithm Development · Data Analysis ·
-                        Maritime AIS Data
-                    </p>
+                            <span class="project-year">
+                                2025
+                            </span>
 
-                </div>
+                        </div>
 
-            </article>
+                        <h3>
+                            AIS-Based Vessel Movement Detection
+                        </h3>
 
-
-            <!-- PROJECT 2 -->
-
-            <article class="project-entry">
-
-                <div class="project-information">
-
-                    <p class="project-type">
-                        BSc Dissertation
-                    </p>
-
-                    <p class="project-year">
-                        2024–2025
-                    </p>
-
-                </div>
-
-                <div class="project-description">
-
-                    <h3>
-                        A Study of Synthetic Differential Geometry in Type Theory
-                    </h3>
-
-                    <p class="project-organisation">
-                        University of Nottingham
-                    </p>
-
-                    <p>
-                        This project investigated the formalisation of Synthetic
-                        Differential Geometry using Homotopy Type Theory and the
-                        Agda proof assistant.
-                    </p>
-
-                    <p>
-                        The work included formal definitions and verified proofs
-                        involving curvature, metrics, infinitesimal
-                        transformations and geometric structures. It also
-                        explored visual representations of spherical, planar
-                        and hyperbolic spaces.
-                    </p>
-
-                    <p class="tools">
-                        Agda · Homotopy Type Theory · Formal Proofs ·
-                        Mathematical Logic · LaTeX
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 3 -->
-
-            <article class="project-entry">
-
-                <div class="project-information">
-
-                    <p class="project-type">
-                        Artificial Intelligence Project
-                    </p>
-
-                    <p class="project-year">
-                        2025
-                    </p>
-
-                </div>
-
-                <div class="project-description">
-
-                    <h3>
-                        Multi-Agent Coordination in Space Exploration
-                    </h3>
-
-                    <p>
-                        I developed a three-dimensional rover simulation to
-                        investigate coordination between autonomous agents
-                        operating in a Mars-inspired environment.
-                    </p>
-
-                    <p>
-                        The project compared PPO, MADDPG and evolutionary
-                        algorithms under terrain, navigation, energy and
-                        coordination constraints.
-                    </p>
-
-                    <p class="tools">
-                        Python · Multi-Agent Systems · PPO · MADDPG · Ursina
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 4 -->
-
-            <article class="project-entry">
-
-                <div class="project-information">
-
-                    <p class="project-type">
-                        Natural Language Processing
-                    </p>
-
-                    <p class="project-year">
-                        2024
-                    </p>
-
-                </div>
-
-                <div class="project-description">
-
-                    <h3>
-                        NLP-Based Travel Booking Chatbot
-                    </h3>
-
-                    <p>
-                        I built a conversational artificial intelligence system
-                        for travel-booking interactions.
-                    </p>
-
-                    <p>
-                        The system incorporated intent recognition, information
-                        retrieval and sentiment analysis to interpret user
-                        requests and provide relevant responses.
-                    </p>
-
-                    <p class="tools">
-                        Python · NLP · NLTK · Intent Recognition ·
-                        Conversational AI
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 5 -->
-
-            <article class="project-entry">
-
-                <div class="project-information">
-
-                    <p class="project-type">
-                        Software Engineering
-                    </p>
-
-                    <p class="project-year">
-                        2023–2024
-                    </p>
-
-                </div>
-
-                <div class="project-description">
-
-                    <h3>
-                        Nottingham &amp; Union Rowing Club Application
-                    </h3>
-
-                    <p>
-                        I co-developed a multi-platform application designed to
-                        replace the rowing club's existing website.
-                    </p>
-
-                    <p>
-                        The project focused on improving navigation,
-                        accessibility, usability and communication between the
-                        club and its members.
-                    </p>
-
-                    <p class="tools">
-                        Application Development · Software Engineering ·
-                        UX Design · Team Collaboration
-                    </p>
-
-                </div>
-
-            </article>
-
-        </section>
-
-
-        <!-- ============================================
-             ACADEMIC BACKGROUND
-        ============================================= -->
-
-        <section id="background" class="content-section">
-
-            <div class="section-title">
-
-                <p>Background</p>
-
-                <h2>
-                    Education and Experience
-                </h2>
-
-            </div>
-
-
-            <!-- EDUCATION -->
-
-            <div class="subsection">
-
-                <h3 class="subsection-title">
-                    Education
-                </h3>
-
-                <article class="background-entry">
-
-                    <div>
-                        <p class="entry-date">
-                            2025–2026
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            MSc Computer Science
-                        </h4>
-
-                        <p class="entry-organisation">
-                            University of Warwick
-                        </p>
-
-                        <p>
-                            Areas of study include machine learning,
-                            data analytics, natural language processing,
-                            artificial intelligence and advanced computing.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="background-entry">
-
-                    <div>
-                        <p class="entry-date">
-                            2022–2025
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            BSc (Hons) Computer Science
-                        </h4>
-
-                        <p class="entry-organisation">
-                            University of Nottingham
-                        </p>
-
-                        <p>
-                            Areas of study included artificial intelligence,
-                            software engineering, formal methods, computer
-                            security, human–AI interaction and database systems.
-                        </p>
-
-                    </div>
-
-                </article>
-
-            </div>
-
-
-            <!-- EXPERIENCE -->
-
-            <div class="subsection">
-
-                <h3 class="subsection-title">
-                    Research and Professional Experience
-                </h3>
-
-                <article class="background-entry">
-
-                    <div>
-                        <p class="entry-date">
-                            Jun–Aug 2025
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            External Research Collaborator
-                        </h4>
-
-                        <p class="entry-organisation">
+                        <p class="project-org">
                             Cyprus University of Technology
                         </p>
 
                         <p>
-                            Developed and tested algorithms for detecting
-                            vessel movements using Automatic Identification
-                            System data under the supervision of Associate
-                            Professor Herodotos Herodotou.
-                        </p>
-
-                    </div>
-
-                </article>
-
-                <article class="background-entry">
-
-                    <div>
-                        <p class="entry-date">
-                            Jan–Jun 2025
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <h4>
-                            Computing Officer
-                        </h4>
-
-                        <p class="entry-organisation">
-                            University of Nottingham MedTech
+                            Developed and tested algorithms using Automatic
+                            Identification System data to detect vessel
+                            movements in maritime areas of interest.
                         </p>
 
                         <p>
-                            Supported interdisciplinary events and helped
-                            organise activities at the intersection of
-                            technology, healthcare and digital innovation.
+                            The project addressed noisy observations,
+                            reporting errors and message constraints.
                         </p>
 
-                    </div>
+                        <div class="tag-row">
 
-                </article>
+                            <span>
+                                Python
+                            </span>
 
-                <article class="background-entry">
+                            <span>
+                                Algorithm Development
+                            </span>
 
-                    <div>
-                        <p class="entry-date">
+                            <span>
+                                Data Analysis
+                            </span>
+
+                            <span>
+                                AIS
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="modal-open"
+                            data-modal="modal-ais"
+                        >
+                            Read project details
+                        </button>
+
+                    </article>
+
+                    <!-- PROJECT 2 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-card-top">
+
+                            <span class="project-type">
+                                BSc Dissertation
+                            </span>
+
+                            <span class="project-year">
+                                2024–2025
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Synthetic Differential Geometry in Type Theory
+                        </h3>
+
+                        <p>
+                            Formalised mathematical concepts using Homotopy
+                            Type Theory and the Agda proof assistant.
+                        </p>
+
+                        <p>
+                            The project included verified definitions and
+                            proofs involving curvature, metrics and
+                            geometric transformations.
+                        </p>
+
+                        <div class="tag-row">
+
+                            <span>
+                                Agda
+                            </span>
+
+                            <span>
+                                Type Theory
+                            </span>
+
+                            <span>
+                                Formal Proofs
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="modal-open"
+                            data-modal="modal-sdg"
+                        >
+                            Read project details
+                        </button>
+
+                    </article>
+
+                    <!-- PROJECT 3 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-card-top">
+
+                            <span class="project-type">
+                                Artificial Intelligence
+                            </span>
+
+                            <span class="project-year">
+                                2025
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            Multi-Agent Coordination in Space Exploration
+                        </h3>
+
+                        <p>
+                            Developed a three-dimensional rover simulation
+                            comparing PPO, MADDPG and evolutionary algorithms.
+                        </p>
+
+                        <p>
+                            The simulation included terrain, energy,
+                            navigation and coordination constraints.
+                        </p>
+
+                        <div class="tag-row">
+
+                            <span>
+                                PPO
+                            </span>
+
+                            <span>
+                                MADDPG
+                            </span>
+
+                            <span>
+                                Ursina
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="modal-open"
+                            data-modal="modal-space"
+                        >
+                            Read project details
+                        </button>
+
+                    </article>
+
+                    <!-- PROJECT 4 -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-card-top">
+
+                            <span class="project-type">
+                                Natural Language Processing
+                            </span>
+
+                            <span class="project-year">
+                                2024
+                            </span>
+
+                        </div>
+
+                        <h3>
+                            NLP-Based Travel Booking Chatbot
+                        </h3>
+
+                        <p>
+                            Built a conversational AI system implementing
+                            intent recognition, information retrieval and
+                            sentiment analysis.
+                        </p>
+
+                        <p>
+                            The system was designed to support travel-booking
+                            interactions and interpret user requests.
+                        </p>
+
+                        <div class="tag-row">
+
+                            <span>
+                                Python
+                            </span>
+
+                            <span>
+                                NLP
+                            </span>
+
+                            <span>
+                                NLTK
+                            </span>
+
+                        </div>
+
+                        <button
+                            class="modal-open"
+                            data-modal="modal-chatbot"
+                        >
+                            Read project details
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             BACKGROUND
+        ================================================== -->
+
+        <section
+            id="background"
+            class="section section-dark background-section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <p class="kicker kicker-light">
+                        Background
+                    </p>
+
+                    <h2>
+                        Education and experience.
+                    </h2>
+
+                </div>
+
+                <div class="timeline">
+
+                    <!-- TIMELINE ITEM 1 -->
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2025–2026
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+
+                            <span>
+                                Education
+                            </span>
+
+                            <h3>
+                                MSc Computer Science
+                            </h3>
+
+                            <p class="timeline-org">
+                                University of Warwick
+                            </p>
+
+                            <p>
+                                Machine learning, data analytics,
+                                natural language processing and
+                                advanced computing.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TIMELINE ITEM 2 -->
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            Jun–Aug 2025
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+
+                            <span>
+                                Research
+                            </span>
+
+                            <h3>
+                                External Research Collaborator
+                            </h3>
+
+                            <p class="timeline-org">
+                                Cyprus University of Technology
+                            </p>
+
+                            <p>
+                                Algorithm development and data analysis
+                                for vessel-movement detection using AIS data.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TIMELINE ITEM 3 -->
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2022–2025
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+
+                            <span>
+                                Education
+                            </span>
+
+                            <h3>
+                                BSc (Hons) Computer Science
+                            </h3>
+
+                            <p class="timeline-org">
+                                University of Nottingham
+                            </p>
+
+                            <p>
+                                Artificial intelligence, software engineering,
+                                formal methods, security and human–AI interaction.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TIMELINE ITEM 4 -->
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
                             Jun–Jul 2024
-                        </p>
-                    </div>
+                        </div>
 
-                    <div>
+                        <div class="timeline-dot"></div>
 
-                        <h4>
-                            Software Engineer Intern
-                        </h4>
+                        <div class="timeline-card">
 
-                        <p class="entry-organisation">
-                            Amdocs
-                        </p>
+                            <span>
+                                Industry
+                            </span>
 
-                        <p>
-                            Worked in software testing and automation,
-                            contributing to CI/CD workflows, API testing,
-                            debugging and software validation.
-                        </p>
+                            <h3>
+                                Software Engineer Intern
+                            </h3>
 
-                    </div>
+                            <p class="timeline-org">
+                                Amdocs
+                            </p>
 
-                </article>
+                            <p>
+                                CI/CD automation, API testing, debugging
+                                and software validation.
+                            </p>
 
-                <article class="background-entry">
+                        </div>
 
-                    <div>
-                        <p class="entry-date">
+                    </article>
+
+                    <!-- TIMELINE ITEM 5 -->
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            Jan–Jun 2025
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-card">
+
+                            <span>
+                                Academic community
+                            </span>
+
+                            <h3>
+                                Computing Officer
+                            </h3>
+
+                            <p class="timeline-org">
+                                University of Nottingham MedTech
+                            </p>
+
+                            <p>
+                                Interdisciplinary events and hackathon
+                                organisation across computing,
+                                engineering and healthcare.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TIMELINE ITEM 6 -->
+
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
                             Jun–Sep 2023
-                        </p>
-                    </div>
+                        </div>
 
-                    <div>
+                        <div class="timeline-dot"></div>
 
-                        <h4>
-                            Summer Intern
-                        </h4>
+                        <div class="timeline-card">
 
-                        <p class="entry-organisation">
-                            Golden Union Shipping
-                        </p>
+                            <span>
+                                Industry
+                            </span>
+
+                            <h3>
+                                Summer Intern
+                            </h3>
+
+                            <p class="timeline-org">
+                                Golden Union Shipping
+                            </p>
+
+                            <p>
+                                Business-process analysis, data verification
+                                and support during migration to a cloud-based
+                                crew-management platform.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section class="section section-light">
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <p class="kicker">
+                        Methods and tools
+                    </p>
+
+                    <h2>
+                        Technical foundation.
+                    </h2>
+
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card reveal">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h3>
+                            Programming
+                        </h3>
 
                         <p>
-                            Supported a transition to a cloud-based
-                            crew-management platform through business-process
-                            analysis, data verification and system testing.
+                            Python, Java, C, C++, JavaScript,
+                            PHP, SQL, HTML and CSS
                         </p>
 
-                    </div>
+                    </article>
 
-                </article>
+                    <article class="skill-card reveal">
 
-            </div>
+                        <span>
+                            02
+                        </span>
 
-        </section>
+                        <h3>
+                            Artificial Intelligence
+                        </h3>
 
+                        <p>
+                            Machine learning, reinforcement learning,
+                            multi-agent systems, PPO, MADDPG and NLP
+                        </p>
 
-        <!-- ============================================
-             ACADEMIC ACTIVITIES
-        ============================================= -->
+                    </article>
 
-        <section id="activities" class="content-section">
+                    <article class="skill-card reveal">
 
-            <div class="section-title">
+                        <span>
+                            03
+                        </span>
 
-                <p>Activities</p>
+                        <h3>
+                            Research and Data
+                        </h3>
 
-                <h2>
-                    Academic and Community Activities
-                </h2>
+                        <p>
+                            Algorithm development, simulation, data analysis,
+                            statistical evaluation, NumPy, pandas and Matplotlib
+                        </p>
 
-            </div>
+                    </article>
 
-            <div class="activities-grid">
+                    <article class="skill-card reveal">
 
-                <article>
+                        <span>
+                            04
+                        </span>
 
-                    <h3>
-                        MedTech Hackathon
-                    </h3>
+                        <h3>
+                            Formal Methods
+                        </h3>
 
-                    <p>
-                        Co-organised an interdisciplinary hackathon bringing
-                        together students from computing, medicine, engineering
-                        and related disciplines to develop digital-health
-                        solutions.
-                    </p>
+                        <p>
+                            Agda, Homotopy Type Theory, formal proofs,
+                            mathematical logic and LaTeX
+                        </p>
 
-                </article>
+                    </article>
 
-                <article>
+                    <article class="skill-card reveal">
 
-                    <h3>
-                        European Youth Parliament
-                    </h3>
+                        <span>
+                            05
+                        </span>
 
-                    <p>
-                        Participated in activities involving discussion,
-                        collaboration, public speaking and engagement with
-                        social and policy questions.
-                    </p>
+                        <h3>
+                            Software Engineering
+                        </h3>
 
-                </article>
+                        <p>
+                            Git, GitHub, Linux, Jenkins, CI/CD,
+                            Postman, Agile, Scrum and UML
+                        </p>
 
-                <article>
+                    </article>
 
-                    <h3>
-                        Computing Communities
-                    </h3>
+                    <article class="skill-card reveal">
 
-                    <p>
-                        Member of Warwick AI Society, Warwick Computing Society,
-                        Coding Society, HackSoc and the Greek and Cypriot
-                        Society.
-                    </p>
+                        <span>
+                            06
+                        </span>
 
-                </article>
+                        <h3>
+                            Languages
+                        </h3>
 
-                <article>
+                        <p>
+                            Greek — Native
+                            <br>
+                            English — Fluent
+                        </p>
 
-                    <h3>
-                        Other Interests
-                    </h3>
-
-                    <p>
-                        Volleyball, classical guitar, interdisciplinary
-                        technology, formal mathematics and the communication of
-                        scientific ideas.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-
-        <!-- ============================================
-             TECHNICAL SKILLS
-        ============================================= -->
-
-        <section class="content-section">
-
-            <div class="section-title">
-
-                <p>Methods</p>
-
-                <h2>
-                    Technical Skills
-                </h2>
-
-            </div>
-
-            <div class="skills-list">
-
-                <div>
-
-                    <h3>
-                        Programming
-                    </h3>
-
-                    <p>
-                        Python, Java, C, C++, JavaScript, PHP, SQL,
-                        HTML and CSS
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Artificial Intelligence
-                    </h3>
-
-                    <p>
-                        Machine learning, reinforcement learning,
-                        multi-agent systems, PPO, MADDPG, evolutionary
-                        algorithms and natural language processing
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Research and Data
-                    </h3>
-
-                    <p>
-                        Algorithm development, data analysis, simulation,
-                        experimental evaluation, statistical analysis,
-                        NumPy, pandas and Matplotlib
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Formal Methods
-                    </h3>
-
-                    <p>
-                        Agda, Homotopy Type Theory, formal proof development,
-                        mathematical logic and LaTeX
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Software Engineering
-                    </h3>
-
-                    <p>
-                        Git, GitHub, Linux, Unix, Jenkins, CI/CD, Postman,
-                        Agile, Scrum and UML
-                    </p>
-
-                </div>
-
-                <div>
-
-                    <h3>
-                        Languages
-                    </h3>
-
-                    <p>
-                        Greek — Native<br>
-                        English — Fluent
-                    </p>
+                    </article>
 
                 </div>
 
@@ -1087,40 +1438,42 @@
 
         </section>
 
-
-        <!-- ============================================
+        <!-- =================================================
              CONTACT
-        ============================================= -->
+        ================================================== -->
 
-        <section id="contact" class="content-section contact-section">
+        <section
+            id="contact"
+            class="contact-section section-dark"
+        >
 
-            <div class="section-title">
+            <div class="container contact-grid">
 
-                <p>Contact</p>
+                <div class="reveal">
 
-                <h2>
-                    Get in Touch
-                </h2>
+                    <p class="kicker kicker-light">
+                        Contact
+                    </p>
 
-            </div>
+                    <h2>
+                        Let’s talk about research.
+                    </h2>
 
-            <div class="contact-layout">
-
-                <div>
-
-                    <p class="lead">
+                    <p>
                         I welcome conversations about artificial intelligence,
-                        multi-agent systems, formal methods and interdisciplinary
-                        research.
+                        multi-agent systems, formal methods and
+                        interdisciplinary research.
                     </p>
 
                 </div>
 
-                <div class="contact-links">
+                <div class="contact-links reveal">
 
                     <a href="mailto:yiotapapafiggou@gmail.com">
 
-                        <span>Email</span>
+                        <span>
+                            Email
+                        </span>
 
                         <strong>
                             yiotapapafiggou@gmail.com
@@ -1134,7 +1487,9 @@
                         rel="noopener noreferrer"
                     >
 
-                        <span>LinkedIn</span>
+                        <span>
+                            LinkedIn
+                        </span>
 
                         <strong>
                             View profile
@@ -1148,7 +1503,9 @@
                         rel="noopener noreferrer"
                     >
 
-                        <span>GitHub</span>
+                        <span>
+                            GitHub
+                        </span>
 
                         <strong>
                             github.com/yiota0707
@@ -1162,10 +1519,12 @@
                         rel="noopener noreferrer"
                     >
 
-                        <span>Curriculum Vitae</span>
+                        <span>
+                            Curriculum Vitae
+                        </span>
 
                         <strong>
-                            Download PDF
+                            Open PDF
                         </strong>
 
                     </a>
@@ -1178,64 +1537,275 @@
 
     </main>
 
-
-    <!-- ================================================
+    <!-- =====================================================
          FOOTER
-    ================================================= -->
+    ====================================================== -->
 
     <footer>
 
-        <p>
-            © <span id="currentYear"></span> Panayiota Papafiggou
-        </p>
+        <div class="container footer-inner">
 
-        <p>
-            Academic website
-        </p>
+            <p>
+                © <span id="year"></span> Panayiota Papafiggou
+            </p>
+
+            <a href="#home">
+                Back to top ↑
+            </a>
+
+        </div>
 
     </footer>
 
+    <!-- =====================================================
+         PROJECT MODALS
+    ====================================================== -->
 
-    <!-- ================================================
-         MOBILE NAVIGATION
-    ================================================= -->
+    <!-- AIS MODAL -->
 
-    <script>
+    <div
+        class="modal"
+        id="modal-ais"
+        aria-hidden="true"
+    >
 
-        const menuButton = document.getElementById("menuButton");
-        const navLinks = document.getElementById("navLinks");
+        <div
+            class="modal-backdrop"
+            data-close-modal
+        ></div>
 
-        menuButton.addEventListener("click", function () {
+        <div
+            class="modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-ais-title"
+        >
 
-            const isOpen = navLinks.classList.toggle("open");
+            <button
+                class="modal-close"
+                data-close-modal
+                aria-label="Close modal"
+            >
+                ×
+            </button>
 
-            menuButton.setAttribute(
-                "aria-expanded",
-                isOpen ? "true" : "false"
-            );
+            <p class="kicker">
+                Research collaboration
+            </p>
 
-        });
+            <h2 id="modal-ais-title">
+                AIS-Based Vessel Movement Detection
+            </h2>
 
-        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            <p>
+                This project focused on detecting vessel movements in
+                defined maritime areas using Automatic Identification
+                System data.
+            </p>
 
-            link.addEventListener("click", function () {
+            <p>
+                The work included algorithm implementation, testing and
+                analysis under real-world data limitations such as noise,
+                missing reports, irregular transmission and message constraints.
+            </p>
 
-                navLinks.classList.remove("open");
+            <p>
+                The research was completed within the Department of
+                Electrical Engineering, Computer Engineering and Informatics
+                at the Cyprus University of Technology.
+            </p>
 
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
+            <p class="modal-meta">
+                Cyprus University of Technology · 2025
+            </p>
 
-            });
+        </div>
 
-        });
+    </div>
 
-        document.getElementById("currentYear").textContent =
-            new Date().getFullYear();
+    <!-- SDG MODAL -->
 
-    </script>
+    <div
+        class="modal"
+        id="modal-sdg"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-backdrop"
+            data-close-modal
+        ></div>
+
+        <div
+            class="modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-sdg-title"
+        >
+
+            <button
+                class="modal-close"
+                data-close-modal
+                aria-label="Close modal"
+            >
+                ×
+            </button>
+
+            <p class="kicker">
+                BSc dissertation
+            </p>
+
+            <h2 id="modal-sdg-title">
+                Synthetic Differential Geometry in Type Theory
+            </h2>
+
+            <p>
+                The project investigated the formalisation of Synthetic
+                Differential Geometry through Homotopy Type Theory
+                and the Agda proof assistant.
+            </p>
+
+            <p>
+                It included verified mathematical definitions and proofs
+                involving curvature, metrics, infinitesimal transformations
+                and geometric structures.
+            </p>
+
+            <p>
+                The project combined formal mathematics, proof development
+                and visual representations of spherical, planar and
+                hyperbolic spaces.
+            </p>
+
+            <p class="modal-meta">
+                University of Nottingham · 2024–2025
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- SPACE MODAL -->
+
+    <div
+        class="modal"
+        id="modal-space"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-backdrop"
+            data-close-modal
+        ></div>
+
+        <div
+            class="modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-space-title"
+        >
+
+            <button
+                class="modal-close"
+                data-close-modal
+                aria-label="Close modal"
+            >
+                ×
+            </button>
+
+            <p class="kicker">
+                Artificial intelligence project
+            </p>
+
+            <h2 id="modal-space-title">
+                Multi-Agent Coordination in Space Exploration
+            </h2>
+
+            <p>
+                This project developed a three-dimensional rover
+                simulation in a Mars-inspired environment.
+            </p>
+
+            <p>
+                The simulation compared PPO, MADDPG and evolutionary
+                approaches under navigation, terrain, energy and
+                coordination constraints.
+            </p>
+
+            <p>
+                The project explored how multiple autonomous agents
+                could coordinate while responding to environmental
+                limitations and shared objectives.
+            </p>
+
+            <p class="modal-meta">
+                Python · Ursina · Multi-Agent Systems
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- CHATBOT MODAL -->
+
+    <div
+        class="modal"
+        id="modal-chatbot"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-backdrop"
+            data-close-modal
+        ></div>
+
+        <div
+            class="modal-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-chatbot-title"
+        >
+
+            <button
+                class="modal-close"
+                data-close-modal
+                aria-label="Close modal"
+            >
+                ×
+            </button>
+
+            <p class="kicker">
+                Natural language processing
+            </p>
+
+            <h2 id="modal-chatbot-title">
+                NLP-Based Travel Booking Chatbot
+            </h2>
+
+            <p>
+                This project developed a conversational artificial
+                intelligence system for travel-booking interactions.
+            </p>
+
+            <p>
+                The system interpreted user requests using intent
+                recognition, information retrieval and sentiment analysis.
+            </p>
+
+            <p>
+                It combined natural language processing techniques to
+                identify user goals and provide contextually relevant responses.
+            </p>
+
+            <p class="modal-meta">
+                Python · NLTK · Conversational AI
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
-
 </html>
