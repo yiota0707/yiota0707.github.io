@@ -22,7 +22,7 @@ My research interests include:
 My long-term goal is to build a career in academia, combining research and teaching while contributing to the development of intelligent systems at the intersection of artificial intelligence and engineering.
 
 ## Website
-jnjdjvbjxbxb
+
 The website provides information about my:
 
 - Academic background
