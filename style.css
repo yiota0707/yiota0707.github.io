@@ -1272,3 +1272,7 @@ p {
     }
 
 }
+/* Sheffield PhD profile refinement */
+:focus-visible {outline:3px solid #4a91c4;outline-offset:4px}
+.project-box,.activity-box {transition:transform .2s ease,box-shadow .2s ease}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
