@@ -30,8 +30,6 @@
         0 18px 45px rgba(16, 42, 67, 0.08);
 }
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -80,8 +78,6 @@ p {
 
     margin: 0 auto;
 }
-
-
 
 .site-header {
     position: sticky;
@@ -234,8 +230,6 @@ p {
 
     background: var(--navy);
 }
-
-
 
 .hero-section {
     padding: 105px 0 95px;
@@ -440,8 +434,6 @@ p {
     color: var(--navy);
 }
 
-
-
 .content-section {
     padding: 95px 0;
 
@@ -492,7 +484,6 @@ p {
 
     font-size: 17px;
 }
-
 
 .about-layout {
     display: grid;
@@ -565,8 +556,6 @@ p {
 
     color: var(--muted);
 }
-
-
 
 .research-entry {
     padding: 48px 0;
@@ -671,8 +660,6 @@ p {
     cursor: pointer;
 }
 
-
-
 .project-grid {
     display: grid;
     grid-template-columns:
@@ -739,8 +726,6 @@ p {
 .project-box .keyword-list {
     margin-top: auto;
 }
-
-
 
 .section-navy {
     background: var(--navy-dark);
@@ -815,8 +800,6 @@ p {
     color: #aebdca;
 }
 
-
-
 .activity-grid {
     display: grid;
     grid-template-columns:
@@ -880,8 +863,6 @@ p {
 .personal-note > p:last-child {
     color: var(--muted);
 }
-
-
 
 .contact-section {
     padding: 85px 0;
@@ -947,8 +928,6 @@ p {
     color: var(--blue);
 }
 
-
-
 .site-footer {
     background: var(--navy-dark);
     color: #9fb0c0;
@@ -971,8 +950,6 @@ p {
 .footer-inner a:hover {
     color: white;
 }
-
-
 
 .research-dialog {
     width: min(
@@ -1050,8 +1027,6 @@ p {
     color: var(--muted);
 }
 
-
-
 .reveal {
     opacity: 0;
 
@@ -1068,8 +1043,6 @@ p {
 
     transform: none;
 }
-
-
 
 @media (max-width: 920px) {
 
@@ -1098,8 +1071,6 @@ p {
     }
 
 }
-
-
 
 @media (max-width: 720px) {
 
@@ -1207,8 +1178,6 @@ p {
 
 }
 
-
-
 @media (max-width: 460px) {
 
     .site-identity {
@@ -1254,8 +1223,6 @@ p {
 
 }
 
-
-
 @media (prefers-reduced-motion: reduce) {
 
     * {
@@ -1271,4 +1238,21 @@ p {
         transform: none;
     }
 
+}
+
+:focus-visible {outline:3px solid #4a91c4;outline-offset:4px}
+.project-box,.activity-box {transition:transform .2s ease,box-shadow .2s ease}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1!important;transform:none!important}}
+
+.research-entry.research-entry-title-only {
+    display: block;
+}
+
+.research-entry.research-entry-title-only .research-entry-content {
+    max-width: 100%;
+}
+
+.research-entry.research-entry-title-only h3 {
+    max-width: 900px;
+    overflow-wrap: break-word;
 }
